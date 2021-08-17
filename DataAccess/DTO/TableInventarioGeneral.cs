@@ -21,15 +21,15 @@ namespace DataAccess.DTO
 
         public decimal Cantidad { get; set; }
 
-        //[DisplayName("Tipo Articulo")]
+        [DisplayName("Tipo Articulo")]
         public string Tipo_Articulo { get; set; }
 
-        
-        
+
+
         //private decimal precio;|
-        //[DisplayName("Precio Costo")]
+
         //[DataType(DataType.Currency)]
-        
+        [DisplayName("Precio Costo")]
         public decimal Precio { get; set; }
         //public decimal Precio { get { return decimal.Round(precio, 2, MidpointRounding.AwayFromZero); } set { precio = decimal.Round(value, 2, MidpointRounding.AwayFromZero); } }
     }

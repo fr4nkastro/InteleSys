@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace DataAccess.Contracts
 {
@@ -26,16 +27,49 @@ namespace DataAccess.Contracts
             public string Nombre { get; set; }
             public string Descripcion { get; set; }
         }
+    }
 
-        public class MantenimientoFecha
+    public class MantenimientoMaquinas
+    {
+        //public decimal id { get; set; }
+        public string serialNO { get; set; }
+    }
+
+    public class MantenimientoAverias
+    {
+        public decimal id { get; set; }
+        public string nombre { get; set; }
+
+    }
+
+    public class MantenimientoObservaciones
+    {
+        public decimal id { get; set; }
+        public string nombre { get; set; }
+    }
+
+    public class MantenimientoActividades
+    {
+        public decimal id
         {
-            public Decimal id { get; set; }
-            public DateTime Fecha { get; set;}
+            get; set;
         }
-        public class Maquina
+        public string nombre
+        {
+            get; set;
+        }
+    }
+
+    public class MantenimientoFechas
+    {
+        public decimal id { get; set; }
+        public DateTime date { get; set; }
+    }
+
+    public class Maquina
         {
             public Decimal ID { get; set; }
             public String Serie { get; set; }
         }
-    }
+   
 }

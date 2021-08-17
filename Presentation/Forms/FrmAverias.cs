@@ -25,7 +25,7 @@ namespace Presentation.Forms
         public void ListAverias()
         {
             dataGridView1.DataSource = Averias.GetAllAverias();
-           
+
         }
         private void limpiar()
         {
@@ -35,7 +35,8 @@ namespace Presentation.Forms
             Estado = "";
         }
 
-        private void Agregar() {
+        private void Agregar()
+        {
             ModeloAverias modeloAverias = new ModeloAverias();
             List<AVERIAS> tableAverias = modeloAverias.GetAll();
             AVERIAS objAverias = new AVERIAS();
@@ -48,7 +49,8 @@ namespace Presentation.Forms
 
 
         }
-        private void Editar() {
+        private void Editar()
+        {
             ModeloAverias modeloAverias = new ModeloAverias();
             //List<AVERIAS> tableAverias = modeloAverias.GetAll();
             AVERIAS objAverias = new AVERIAS();
@@ -59,12 +61,12 @@ namespace Presentation.Forms
             objAverias.solucion = TxtSolucion.Text;
             objAverias.modelo_id = Averias.modelo[CBModelo.SelectedIndex].id;
             modeloAverias.Edit(objAverias);
-            
+
 
         }
 
 
-       // Fin de Funciones
+        // Fin de Funciones
 
         public FrmAverias(FormHome frmHome)
         {
@@ -72,10 +74,10 @@ namespace Presentation.Forms
             Averias = new ModeloAverias();
             MODELO = new MODELO();
             PCRUD.Visible = false;
-            CBModelo.DataSource=Averias.GetModelo();
+            CBModelo.DataSource = Averias.GetModelo();
             CBModelo.SelectedIndex = 0;
             TxtDescripcionModelo.Enabled = false;
-            
+
         }
 
         private void FrmAverias_Load(object sender, EventArgs e)
@@ -85,10 +87,12 @@ namespace Presentation.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Estado == "ADDED") {
+            if (Estado == "ADDED")
+            {
                 Agregar();
             }
-            else if (Estado=="EDITED") {
+            else if (Estado == "EDITED")
+            {
                 Editar();
             }
             limpiar();
@@ -99,5 +103,5 @@ namespace Presentation.Forms
         {
             TxtDescripcionModelo.Text = Averias.modelo[CBModelo.SelectedIndex].Descripcion.ToString();
         }
-    }
+    }   
 }

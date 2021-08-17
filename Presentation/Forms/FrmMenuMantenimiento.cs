@@ -7,70 +7,74 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Domain.Models;
 namespace Presentation.Forms
 {
     public partial class FrmMenuMantenimiento : Form
     {
-        public FrmMantenimientoDetallado formParent { get; set; }
 
-        public FrmMenuMantenimiento(FrmMantenimientoDetallado formParent)
+        public FrmMantenimientoDetallado frmParent;
+        public ModelMantenimiento objModelMantenimiento;
+        public ModelRegMantenimientoMqns objModelRegMantenimientoMqns;
+        DateTime startDate;
+        DateTime endDate;
+        //private ModelDTOMantenimiento objDTOMantenimiento;
+        public FrmMenuMantenimiento()
         {
             InitializeComponent();
-            this.formParent = formParent;
+            objModelMantenimiento = new ModelMantenimiento();
+            objModelRegMantenimientoMqns = new ModelRegMantenimientoMqns();
+            //selectDate= Convert.ToDateTime(dateTimePicker1.Value.ToShortDateString());
+
+            //objDTOMantenimiento = new ModelDTOMantenimiento();
         }
 
-        private void textBoxSearch_Enter(object sender, EventArgs e)
-        {
-            if (textBoxSearch.Text == "Buscar Registro...")
-            {
-                textBoxSearch.Text = "";
-            }
-        }
 
-        private void textBoxSearch_Leave(object sender, EventArgs e)
-        {
-            if (textBoxSearch.Text.Trim() == "")
-            {
-                textBoxSearch.Text = "Buscar Registro...";
-            }
-        }
+
         private void FrmMenuMantenimiento_Load(object sender, EventArgs e)
         {
-            textBoxSearch.Text = "Buscar Registro...";
-            comboBoxFilters.Text = "Seleccione un filtro...";
-            //comboBoxFilters.DataSource = formParent.MantenimientoFecha.GetMaquina();
+
+
+
 
 
         }
 
         private void panel1_Enter(object sender, EventArgs e)
         {
-            
+
         }
 
         private void comboBoxFilters_Enter(object sender, EventArgs e)
         {
-           if(comboBoxFilters.Text=="Seleccione un filtro...")
+            if (comboBoxFechas.Text == "Seleccione un filtro...")
             {
-                comboBoxFilters.Text= "";
+                comboBoxFechas.Text = "";
             }
         }
 
         private void comboBoxFilters_Leave(object sender, EventArgs e)
         {
-            if (comboBoxFilters.Text.Trim() == "")
-                comboBoxFilters.Text = "Seleccione un filtro...";
+            if (comboBoxFechas.Text.Trim() == "")
+                comboBoxFechas.Text = "Seleccione un filtro...";
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            startDate = dateTimePickerStart.Value;
+            endDate = dateTimePickerEnd.Value;
+            comboBoxFechas.DataSource = objModelMantenimiento.listFechasMantenimiento(startDate, endDate);
 
         }
 
-        private void comboBoxFilters_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBoxFechas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //formParent.dataGridView1.DataSource = formParent.Averias.repository.Search2((comboBoxFilters.SelectedIndex+1).ToString());
+            decimal mantenimientoId = objModelMantenimiento.lstMantenimiento[comboBoxFechas.SelectedIndex].id;
+            frmParent.dataGridViewMaquina.DataSource = objModelRegMantenimientoMqns.GetMaquinaByMantenimiento(mantenimientoId);
         }
     }
 }

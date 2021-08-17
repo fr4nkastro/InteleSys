@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="66e0190ef0814c9fb4d4c86bc0a02e1f" Name="Diagram1">
+        <EntityTypeShape EntityType="InteleSysModel.ARTICULO" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.ARTICULO_INVENTARIO" Width="1.5" PointX="1.5" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.AVERIAS" Width="1.5" PointX="6" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.CIUDADES" Width="1.5" PointX="3.75" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.CLIENTE" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.ESTADO_MAQUINA" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.FACTURAS" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.INVENTARIO" Width="1.5" PointX="1.5" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.MANTENIMIENTO" Width="1.5" PointX="6" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.MAQUINA" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.MODELO" Width="1.5" PointX="0.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.OBSERVACIONES" Width="1.5" PointX="8.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.PIEZAS" Width="1.5" PointX="11.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.REG_MANTENIMIENTO_MQNs" Width="1.5" PointX="11.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.REGISTRO_AVERIA" Width="1.5" PointX="8.25" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.REGISTRO_CONSUMO_PIEZAS" Width="1.5" PointX="13.5" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.REGISTRO_INVENTARIO" Width="1.5" PointX="0.75" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.REGISTRO_TAREAS" Width="1.5" PointX="11.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.REGISTRO_TECNICOS" Width="1.5" PointX="11.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.TAREAS" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.TIPO_ARTICULO" Width="1.5" PointX="1.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.TIPO_TRANSACCION_INVENTARIO" Width="1.5" PointX="1.5" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.TIPO_USUARIO" Width="1.5" PointX="3.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InteleSysModel.USUARIO" Width="1.5" PointX="6" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="InteleSysModel.ARTICULO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.ARTICULO_FKv2" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.ARTICULO_FKv3" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.ARTICULO_FKv4" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.TIPO_ARTICULO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.ARTICULO_INVENTARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.INVENTARIO_FKv3" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.AVERIA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MODELO_FKv2" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.CIUDADES_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.CLIENTE_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.CLIENTE_FKv1" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.CLIENTE_FKv3" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.ESTADO_MAQUINA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.REGISTRO_INVENTARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MANTENIMIENTO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MANTENIMIENTO_FKv2" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MANTENIMIENTO_FKv3" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MANTENIMIENTO_FKv4" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MANTENIMIENTO_FKv5" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MAQUINA_FKv1" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MAQUINA_FKv2" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MAQUINA_FKv3" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MAQUINA_FKv7" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MODELO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.MODELO_FKv3" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.USUARIO_FKv5" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.PIEZA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.REG_MANTENIMIENTO_MQNs_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.USUARIO_FKv3" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.TIPO_TRANSACCION_INVENTARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.TAREA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.USUARIO_FKv4" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.USUARIO_FKv6" ManuallyRouted="false" />
+        <AssociationConnector Association="InteleSysModel.TIPO_USUARIO_FK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

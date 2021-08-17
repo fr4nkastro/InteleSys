@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F563FD32-E31B-4AFD-A893-2FCF1CF318C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Contracts\IGenericRepository.cs" />
+    <Compile Include="Contracts\TableDTO.cs" />
+    <Compile Include="DTO\TableInventarioGeneral.cs" />
+    <Compile Include="DTO\TableInventarioPiezas.cs" />
+    <Compile Include="Entities\ARTICULO.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ARTICULO_INVENTARIO.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AVERIAS.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CIUDADES.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CLIENTE.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\CustomTable.cs" />
+    <Compile Include="Entities\ESTADO_MAQUINA.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\FACTURAS.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\INVENTARIO.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MANTENIMIENTO.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MAQUINA.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ModelInteleSys.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelInteleSys.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ModelInteleSys.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ModelInteleSys.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelInteleSys.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\MODELO.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\OBSERVACIONES.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\PIEZAS.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\REGISTRO_AVERIA.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\REGISTRO_CONSUMO_PIEZAS.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\REGISTRO_INVENTARIO.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\REGISTRO_TAREAS.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\REGISTRO_TECNICOS.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\REG_MANTENIMIENTO_MQNs.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\sysdiagrams.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TAREAS.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TIPO_ARTICULO.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TIPO_TRANSACCION_INVENTARIO.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TIPO_USUARIO.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\USUARIO.cs">
+      <DependentUpon>ModelInteleSys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\RepositoryArticuloInventario.cs" />
+    <Compile Include="Repositories\RepositoryArticulos.cs" />
+    <Compile Include="Repositories\RepositoryDTOInventarioGeneral.cs" />
+    <Compile Include="Repositories\RepositoryDTOInventarioPiezas.cs" />
+    <Compile Include="Repositories\RepositoryCustomTable.cs" />
+    <Compile Include="Repositories\RepositoryDTOMantenimiento.cs" />
+    <Compile Include="Repositories\RepositoryPiezas.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Entities\ModelInteleSys.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelInteleSys.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Entities\ModelInteleSys.edmx.diagram">
+      <DependentUpon>ModelInteleSys.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entities\ModelInteleSys.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelInteleSys.Context.cs</LastGenOutput>
+      <DependentUpon>ModelInteleSys.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entities\ModelInteleSys.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelInteleSys.edmx</DependentUpon>
+      <LastGenOutput>ModelInteleSys.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

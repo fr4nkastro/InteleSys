@@ -33,6 +33,9 @@ namespace Presentation.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInventario));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelCrud = new System.Windows.Forms.Panel();
+            this.comboBoxInventario = new System.Windows.Forms.ComboBox();
+            this.textBoxCantidad = new System.Windows.Forms.TextBox();
+            this.comboBoxTipoArticulo = new System.Windows.Forms.ComboBox();
             this.buttonAñadir = new System.Windows.Forms.Button();
             this.textBoxPrecioCosto = new System.Windows.Forms.TextBox();
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
@@ -49,9 +52,6 @@ namespace Presentation.Forms
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.comboBoxTipoArticulo = new System.Windows.Forms.ComboBox();
-            this.textBoxCantidad = new System.Windows.Forms.TextBox();
-            this.comboBoxInventario = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelCrud.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -71,7 +71,7 @@ namespace Presentation.Forms
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(828, 613);
+            this.dataGridView1.Size = new System.Drawing.Size(813, 613);
             this.dataGridView1.TabIndex = 2;
             // 
             // panelCrud
@@ -86,17 +86,50 @@ namespace Presentation.Forms
             this.panelCrud.Controls.Add(this.comboBoxModeloMaquina);
             this.panelCrud.Controls.Add(this.bindingNavigator1);
             this.panelCrud.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelCrud.Location = new System.Drawing.Point(828, 0);
+            this.panelCrud.Location = new System.Drawing.Point(813, 0);
             this.panelCrud.Name = "panelCrud";
-            this.panelCrud.Size = new System.Drawing.Size(283, 613);
+            this.panelCrud.Size = new System.Drawing.Size(298, 613);
             this.panelCrud.TabIndex = 3;
+            // 
+            // comboBoxInventario
+            // 
+            this.comboBoxInventario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxInventario.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxInventario.FormattingEnabled = true;
+            this.comboBoxInventario.Items.AddRange(new object[] {
+            "San Pedro Sula",
+            "Tegucigalpa"});
+            this.comboBoxInventario.Location = new System.Drawing.Point(21, 35);
+            this.comboBoxInventario.Name = "comboBoxInventario";
+            this.comboBoxInventario.Size = new System.Drawing.Size(250, 29);
+            this.comboBoxInventario.TabIndex = 12;
+            // 
+            // textBoxCantidad
+            // 
+            this.textBoxCantidad.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCantidad.Location = new System.Drawing.Point(21, 242);
+            this.textBoxCantidad.Name = "textBoxCantidad";
+            this.textBoxCantidad.Size = new System.Drawing.Size(250, 28);
+            this.textBoxCantidad.TabIndex = 8;
+            this.textBoxCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxCantidad.Enter += new System.EventHandler(this.textBoxCantidad_Enter);
+            this.textBoxCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCantidad_KeyPress);
+            this.textBoxCantidad.Leave += new System.EventHandler(this.textBoxCantidad_Leave);
+            // 
+            // comboBoxTipoArticulo
+            // 
+            this.comboBoxTipoArticulo.FormattingEnabled = true;
+            this.comboBoxTipoArticulo.Location = new System.Drawing.Point(21, 105);
+            this.comboBoxTipoArticulo.Name = "comboBoxTipoArticulo";
+            this.comboBoxTipoArticulo.Size = new System.Drawing.Size(250, 24);
+            this.comboBoxTipoArticulo.TabIndex = 11;
             // 
             // buttonAñadir
             // 
-            this.buttonAñadir.Location = new System.Drawing.Point(46, 296);
+            this.buttonAñadir.Location = new System.Drawing.Point(89, 298);
             this.buttonAñadir.Name = "buttonAñadir";
-            this.buttonAñadir.Size = new System.Drawing.Size(75, 23);
-            this.buttonAñadir.TabIndex = 8;
+            this.buttonAñadir.Size = new System.Drawing.Size(120, 48);
+            this.buttonAñadir.TabIndex = 10;
             this.buttonAñadir.Text = "Añadir";
             this.buttonAñadir.UseVisualStyleBackColor = true;
             this.buttonAñadir.Click += new System.EventHandler(this.buttonAñadir_Click);
@@ -110,6 +143,7 @@ namespace Presentation.Forms
             this.textBoxPrecioCosto.TabIndex = 7;
             this.textBoxPrecioCosto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxPrecioCosto.Enter += new System.EventHandler(this.textBoxPrecioCosto_Enter);
+            this.textBoxPrecioCosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPrecioCosto_KeyPress);
             this.textBoxPrecioCosto.Leave += new System.EventHandler(this.textBoxPrecioCosto_Leave);
             // 
             // textBoxDescripcion
@@ -171,15 +205,15 @@ namespace Presentation.Forms
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(283, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(298, 27);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
-            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
+            this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorMoveFirstItem
@@ -188,7 +222,7 @@ namespace Presentation.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -197,13 +231,13 @@ namespace Presentation.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -217,7 +251,7 @@ namespace Presentation.Forms
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -225,7 +259,7 @@ namespace Presentation.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -234,43 +268,13 @@ namespace Presentation.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
-            // 
-            // comboBoxTipoArticulo
-            // 
-            this.comboBoxTipoArticulo.FormattingEnabled = true;
-            this.comboBoxTipoArticulo.Location = new System.Drawing.Point(21, 105);
-            this.comboBoxTipoArticulo.Name = "comboBoxTipoArticulo";
-            this.comboBoxTipoArticulo.Size = new System.Drawing.Size(250, 24);
-            this.comboBoxTipoArticulo.TabIndex = 10;
-            // 
-            // textBoxCantidad
-            // 
-            this.textBoxCantidad.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCantidad.Location = new System.Drawing.Point(21, 242);
-            this.textBoxCantidad.Name = "textBoxCantidad";
-            this.textBoxCantidad.Size = new System.Drawing.Size(250, 28);
-            this.textBoxCantidad.TabIndex = 11;
-            this.textBoxCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // comboBoxInventario
-            // 
-            this.comboBoxInventario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxInventario.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxInventario.FormattingEnabled = true;
-            this.comboBoxInventario.Items.AddRange(new object[] {
-            "San Pedro Sula",
-            "Tegucigalpa"});
-            this.comboBoxInventario.Location = new System.Drawing.Point(21, 35);
-            this.comboBoxInventario.Name = "comboBoxInventario";
-            this.comboBoxInventario.Size = new System.Drawing.Size(250, 29);
-            this.comboBoxInventario.TabIndex = 12;
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // FrmInventario
             // 

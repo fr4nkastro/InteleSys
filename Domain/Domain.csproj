@@ -46,9 +46,10 @@
     <Compile Include="ModelCustomTable.cs" />
     <Compile Include="Models\ModelArticuloInventario.cs" />
     <Compile Include="Models\ModelArticulos.cs" />
+    <Compile Include="Models\ModelMantenimiento.cs" />
     <Compile Include="Models\ModeloAverias.cs" />
-    <Compile Include="Models\ModeloMantenimientoFecha.cs" />
     <Compile Include="Models\ModelPiezas.cs" />
+    <Compile Include="Models\ModelRegMantenimientoMqns.cs" />
     <Compile Include="Models\ModelTableInventarioGeneral.cs" />
     <Compile Include="Models\ModelTableInventarioPiezas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

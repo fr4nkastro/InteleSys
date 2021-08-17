@@ -32,7 +32,7 @@ namespace Presentation.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnIngresar = new System.Windows.Forms.Button();
             this.buttonShowPass = new System.Windows.Forms.Button();
             this.textBoxUser = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -76,25 +76,25 @@ namespace Presentation.Forms
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
-            // button2
+            // BtnIngresar
             // 
-            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(396, 456);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(285, 58);
-            this.button2.TabIndex = 72;
-            this.button2.Text = "Ingresar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.BtnIngresar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnIngresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnIngresar.BackgroundImage")));
+            this.BtnIngresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIngresar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnIngresar.Location = new System.Drawing.Point(396, 456);
+            this.BtnIngresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnIngresar.Name = "BtnIngresar";
+            this.BtnIngresar.Size = new System.Drawing.Size(285, 58);
+            this.BtnIngresar.TabIndex = 72;
+            this.BtnIngresar.Text = "Ingresar";
+            this.BtnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnIngresar.UseVisualStyleBackColor = false;
+            this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
             // 
             // buttonShowPass
             // 
@@ -122,7 +122,7 @@ namespace Presentation.Forms
             this.textBoxUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(288, 23);
-            this.textBoxUser.TabIndex = 66;
+            this.textBoxUser.TabIndex = 1;
             // 
             // label1
             // 
@@ -170,7 +170,7 @@ namespace Presentation.Forms
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(288, 23);
-            this.textBoxPassword.TabIndex = 75;
+            this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // pictureBox5
@@ -230,7 +230,7 @@ namespace Presentation.Forms
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnIngresar);
             this.Controls.Add(this.buttonShowPass);
             this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.label1);
@@ -264,7 +264,7 @@ namespace Presentation.Forms
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnIngresar;
         private System.Windows.Forms.Button buttonShowPass;
         private System.Windows.Forms.TextBox textBoxUser;
         private System.Windows.Forms.Label label1;

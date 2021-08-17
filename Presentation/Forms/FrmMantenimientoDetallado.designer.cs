@@ -185,7 +185,7 @@ namespace Presentation.Forms
             // 
             this.dataGridViewMaquina.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dataGridViewMaquina.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewMaquina.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewMaquina.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewMaquina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMaquina.Location = new System.Drawing.Point(5, 42);
@@ -194,7 +194,7 @@ namespace Presentation.Forms
             this.dataGridViewMaquina.RowTemplate.Height = 24;
             this.dataGridViewMaquina.Size = new System.Drawing.Size(189, 615);
             this.dataGridViewMaquina.TabIndex = 142;
-            this.dataGridViewMaquina.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMaquina_CellClick);
+            
             // 
             // comboBox1
             // 

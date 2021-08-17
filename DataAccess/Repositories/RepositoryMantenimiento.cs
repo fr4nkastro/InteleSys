@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DataAccess.Contracts;
+using DataAccess.Repositories;
+using DataAccess.Entities;
+
+namespace DataAccess.Repositories
+
+{
+    public class RepositoryMantenimiento : IGenericRepository<MANTENIMIENTO>
+    {
+        public void Add(MANTENIMIENTO entity)
+        {
+            using (var context = new InteleSysEntities())
+            {
+                context.MANTENIMIENTO.Add(entity);
+                context.SaveChanges();
+            }
+        }
+
+        public void Edit(MANTENIMIENTO entity)
+        {
+            using (var context = new InteleSysEntities())
+            {
+                context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
+                context.SaveChanges();
+            }
+        }
+
+        public IEnumerable<MANTENIMIENTO> GetAll()
+        {
+            using (var context = new InteleSysEntities())
+            {
+                return context.MANTENIMIENTO.AsNoTracking().ToList<MANTENIMIENTO>();
+            }
+        }
+
+        public void Remove(int id)
+        {
+            using (var context = new InteleSysEntities())
+            {
+                MANTENIMIENTO objMantenimiento = context.MANTENIMIENTO.Find(id);
+                context.MANTENIMIENTO.Remove(objMantenimiento);
+                context.SaveChanges();
+
+            }
+        }
+    }
+}

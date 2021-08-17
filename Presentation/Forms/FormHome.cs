@@ -163,9 +163,10 @@ namespace Presentation.Forms
         private void buttonMantenimiento_Click(object sender, EventArgs e)
         {
 
-            FrmMantenimientoDetallado formMantenimiento = new FrmMantenimientoDetallado(this);
-            FrmMenuMantenimiento formMenuMante = new FrmMenuMantenimiento(formMantenimiento);
+            FrmMantenimientoDetallado formMantenimiento = new FrmMantenimientoDetallado();
+            FrmMenuMantenimiento formMenuMante = new FrmMenuMantenimiento();
             formMantenimiento.frmMenu = formMenuMante;
+            formMenuMante.frmParent=formMantenimiento;
 
 
             OpenForm(formMantenimiento);

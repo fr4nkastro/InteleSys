@@ -37,7 +37,15 @@ namespace Presentation.Forms
             models = new ArrayList();
             modelArticuloInventario = new ModelArticuloInventario();
         }
-
+        public bool isCaracterValido(Char c)
+        {
+            if ((c >= '0' && c <= '9'))
+            {
+                return true;
+            }
+            return false;
+        }
+    
         private decimal validateInventario()
         {
             switch (comboBoxInventario.Text)
@@ -52,8 +60,58 @@ namespace Presentation.Forms
                     return 1;
             }
         }
+
+        private bool Validacion()
+        {
+            if (textBoxSerialNo.TextLength>3 && textBoxSerialNo.Text!= "No.Serie")
+            {
+                if (textBoxDescripcion.TextLength > 0 && textBoxDescripcion.Text != "Descripción")
+                {
+                    if (textBoxPrecioCosto.TextLength > 0 && textBoxPrecioCosto.Text != "Precio Costo")
+                    {
+                        if (textBoxCantidad.TextLength > 0 && textBoxCantidad.Text != "Cantidad")
+                        {
+                            if ( comboBoxModeloMaquina.Text != "Seleccione un modelo")
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Selecione Un Modelo");
+                                return false;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Es Necesario La Cantidad");
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Es Necesario El Precio");
+                        return false;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Es Necesario La Descripcion");
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Es Necesario El Numero de Serie");
+                return false;
+            }
+
+        }
+
+
+
         private void FrmInventario_Load(object sender, EventArgs e)
         {
+            panelCrud.Visible = false;
             comboBoxInventario.SelectedIndex = 0;
             modelInventarioGeneral = frmMenu.modelInventarioGeneral;
             models = modelInventarioGeneral.GetModeloMaquina();
@@ -66,9 +124,11 @@ namespace Presentation.Forms
             textBoxDescripcion.Text = "Descripción";
             textBoxPrecioCosto.Text = "Precio Costo";
             textBoxSerialNo.Text = "No.Serie";
+            textBoxCantidad.Text = "Cantidad";
+
             //comboBoxModeloId.Text = "Seleccione modelo maquina...";
-            
-            
+
+
 
         }
 
@@ -117,6 +177,20 @@ namespace Presentation.Forms
             if (textBoxPrecioCosto.Text == "Precio Costo")
             {
                 textBoxPrecioCosto.Text = "";
+            }
+        }
+        private void textBoxCantidad_Enter(object sender, EventArgs e)
+        {
+            if (textBoxCantidad.Text == "Cantidad")
+            {
+                textBoxCantidad.Text = "";
+            }
+        }
+        private void textBoxCantidad_Leave(object sender, EventArgs e)
+        {
+            if (textBoxCantidad.Text == "")
+            {
+                textBoxCantidad.Text = "Cantidad";
             }
         }
 
@@ -182,7 +256,7 @@ namespace Presentation.Forms
             ARTICULO objArticulo = new ARTICULO();
             objArticulo.articulo_id = newId;
             objArticulo.tipo_articulo_id = tableArticulos[this.comboBoxTipoArticulo.SelectedIndex].tipo_articulo_id;
-            Console.WriteLine("articulo_id={0}\n tipo_articulo_id:{1}", objArticulo.articulo_id, objArticulo.tipo_articulo_id);
+            //Console.WriteLine("articulo_id={0}\n tipo_articulo_id:{1}", objArticulo.articulo_id, objArticulo.tipo_articulo_id);
 
 
             //decimal.Parse(comboBoxTipoArticulo.GetItemText(this.comboBoxTipoArticulo.SelectedItem));
@@ -211,13 +285,23 @@ namespace Presentation.Forms
         {
             if (status==(int)Status.Add)
             {
-                Add();
-            }else if (status==(int)Status.Edit)
+                if (Validacion())
+                {
+                    Add();
+                    MessageBox.Show("Añadido Exitosamente");
+                }
+              
+            }
+            else if (status==(int)Status.Edit)
             {
-                Edit();
+                if (Validacion())
+                {
+                    Edit();
+                    MessageBox.Show("Editado Exitosamente");
+                }
             }
 
-
+            panelCrud.Visible = false;
             bindingSource1.DataSource = modelInventarioGeneral.GetAll();
             
         }
@@ -258,6 +342,29 @@ namespace Presentation.Forms
             
 
 
+        }
+
+        private void textBoxPrecioCosto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            
+            // solo 1 punto decimal
+            else if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

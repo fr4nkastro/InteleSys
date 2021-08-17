@@ -122,6 +122,7 @@ namespace Presentation.Forms
         {
             
             formParent.clearComponents();
+            formParent.panelCrud.Visible = true;
             if (formParent.dataGridView1.SelectedRows.Count>0)
             {
                 formParent.status = 1;
@@ -146,6 +147,7 @@ namespace Presentation.Forms
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             formParent.status = 0;
+            formParent.panelCrud.Visible = true;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

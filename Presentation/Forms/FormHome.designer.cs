@@ -68,9 +68,9 @@ namespace Presentation.Forms
             this.panelHeader.Controls.Add(this.panelToolBar);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
-            this.panelHeader.Margin = new System.Windows.Forms.Padding(2);
+            this.panelHeader.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(993, 122);
+            this.panelHeader.Size = new System.Drawing.Size(1322, 150);
             this.panelHeader.TabIndex = 3;
             // 
             // buttonLogo
@@ -80,10 +80,10 @@ namespace Presentation.Forms
             this.buttonLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogo.FlatAppearance.BorderSize = 0;
             this.buttonLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogo.Location = new System.Drawing.Point(5, 8);
-            this.buttonLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonLogo.Location = new System.Drawing.Point(7, 10);
+            this.buttonLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonLogo.Name = "buttonLogo";
-            this.buttonLogo.Size = new System.Drawing.Size(284, 108);
+            this.buttonLogo.Size = new System.Drawing.Size(379, 133);
             this.buttonLogo.TabIndex = 0;
             this.buttonLogo.UseVisualStyleBackColor = true;
             this.buttonLogo.Click += new System.EventHandler(this.buttonLogo_Click);
@@ -93,9 +93,10 @@ namespace Presentation.Forms
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox2.Location = new System.Drawing.Point(5, 100);
+            this.pictureBox2.Location = new System.Drawing.Point(7, 123);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(257, 12);
+            this.pictureBox2.Size = new System.Drawing.Size(343, 15);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 70;
             this.pictureBox2.TabStop = false;
@@ -106,22 +107,22 @@ namespace Presentation.Forms
             this.panelProfile.Controls.Add(this.labelUsr);
             this.panelProfile.Controls.Add(this.pictureBoxProfile);
             this.panelProfile.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelProfile.Location = new System.Drawing.Point(863, 0);
-            this.panelProfile.Margin = new System.Windows.Forms.Padding(2);
+            this.panelProfile.Location = new System.Drawing.Point(1149, 0);
+            this.panelProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelProfile.Name = "panelProfile";
-            this.panelProfile.Size = new System.Drawing.Size(130, 122);
+            this.panelProfile.Size = new System.Drawing.Size(173, 150);
             this.panelProfile.TabIndex = 0;
             // 
             // cs
             // 
             this.cs.BackColor = System.Drawing.Color.Maroon;
-            this.cs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cs.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cs.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cs.Location = new System.Drawing.Point(19, 95);
+            this.cs.Location = new System.Drawing.Point(25, 117);
+            this.cs.Margin = new System.Windows.Forms.Padding(4);
             this.cs.Name = "cs";
-            this.cs.Size = new System.Drawing.Size(99, 23);
+            this.cs.Size = new System.Drawing.Size(132, 28);
             this.cs.TabIndex = 0;
             this.cs.Text = "Cerrar Sesion";
             this.cs.UseVisualStyleBackColor = false;
@@ -131,22 +132,21 @@ namespace Presentation.Forms
             // labelUsr
             // 
             this.labelUsr.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsr.Location = new System.Drawing.Point(18, 95);
-            this.labelUsr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelUsr.Location = new System.Drawing.Point(24, 117);
             this.labelUsr.Name = "labelUsr";
-            this.labelUsr.Size = new System.Drawing.Size(88, 19);
+            this.labelUsr.Size = new System.Drawing.Size(117, 23);
             this.labelUsr.TabIndex = 0;
             this.labelUsr.Text = "User";
             this.labelUsr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBoxProfile
             // 
-            this.pictureBoxProfile.BackgroundImage = global::Presentation.Properties.Resources.hombre;
+            this.pictureBoxProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxProfile.BackgroundImage")));
             this.pictureBoxProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxProfile.Location = new System.Drawing.Point(26, 13);
-            this.pictureBoxProfile.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxProfile.Location = new System.Drawing.Point(35, 16);
+            this.pictureBoxProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxProfile.Name = "pictureBoxProfile";
-            this.pictureBoxProfile.Size = new System.Drawing.Size(80, 80);
+            this.pictureBoxProfile.Size = new System.Drawing.Size(107, 98);
             this.pictureBoxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxProfile.TabIndex = 0;
             this.pictureBoxProfile.TabStop = false;
@@ -156,10 +156,10 @@ namespace Presentation.Forms
             // 
             this.panelToolBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panelToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
-            this.panelToolBar.Location = new System.Drawing.Point(290, 8);
-            this.panelToolBar.Margin = new System.Windows.Forms.Padding(2);
+            this.panelToolBar.Location = new System.Drawing.Point(386, 10);
+            this.panelToolBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelToolBar.Name = "panelToolBar";
-            this.panelToolBar.Size = new System.Drawing.Size(569, 110);
+            this.panelToolBar.Size = new System.Drawing.Size(757, 135);
             this.panelToolBar.TabIndex = 1;
             // 
             // panel2
@@ -173,10 +173,10 @@ namespace Presentation.Forms
             this.panel2.Controls.Add(this.buttonAverias);
             this.panel2.Controls.Add(this.buttonInventario);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 122);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(0, 150);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 487);
+            this.panel2.Size = new System.Drawing.Size(386, 638);
             this.panel2.TabIndex = 5;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -185,10 +185,10 @@ namespace Presentation.Forms
             this.panel1.Controls.Add(this.button3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Enabled = false;
-            this.panel1.Location = new System.Drawing.Point(0, 457);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(0, 562);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 63);
+            this.panel1.Size = new System.Drawing.Size(386, 78);
             this.panel1.TabIndex = 11;
             this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
@@ -203,10 +203,10 @@ namespace Presentation.Forms
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(74, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(98, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(216, 57);
+            this.button3.Size = new System.Drawing.Size(288, 70);
             this.button3.TabIndex = 5;
             this.button3.Text = "Configuracion de Usuario";
             this.button3.UseVisualStyleBackColor = false;
@@ -223,10 +223,10 @@ namespace Presentation.Forms
             this.buttonConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonConfiguracion.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfiguracion.ForeColor = System.Drawing.Color.White;
-            this.buttonConfiguracion.Location = new System.Drawing.Point(0, 400);
-            this.buttonConfiguracion.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonConfiguracion.Location = new System.Drawing.Point(0, 492);
+            this.buttonConfiguracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonConfiguracion.Name = "buttonConfiguracion";
-            this.buttonConfiguracion.Size = new System.Drawing.Size(290, 57);
+            this.buttonConfiguracion.Size = new System.Drawing.Size(386, 70);
             this.buttonConfiguracion.TabIndex = 10;
             this.buttonConfiguracion.Text = "Configuración";
             this.buttonConfiguracion.UseVisualStyleBackColor = false;
@@ -239,10 +239,10 @@ namespace Presentation.Forms
             this.panelCategoriaReportes.Controls.Add(this.buttonReportesAverias);
             this.panelCategoriaReportes.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCategoriaReportes.Enabled = false;
-            this.panelCategoriaReportes.Location = new System.Drawing.Point(0, 228);
-            this.panelCategoriaReportes.Margin = new System.Windows.Forms.Padding(2);
+            this.panelCategoriaReportes.Location = new System.Drawing.Point(0, 280);
+            this.panelCategoriaReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCategoriaReportes.Name = "panelCategoriaReportes";
-            this.panelCategoriaReportes.Size = new System.Drawing.Size(290, 172);
+            this.panelCategoriaReportes.Size = new System.Drawing.Size(386, 212);
             this.panelCategoriaReportes.TabIndex = 9;
             this.panelCategoriaReportes.Visible = false;
             this.panelCategoriaReportes.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCategoriaReportes_Paint);
@@ -257,10 +257,10 @@ namespace Presentation.Forms
             this.buttonReportesInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReportesInventario.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReportesInventario.ForeColor = System.Drawing.Color.White;
-            this.buttonReportesInventario.Location = new System.Drawing.Point(74, 115);
-            this.buttonReportesInventario.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonReportesInventario.Location = new System.Drawing.Point(98, 142);
+            this.buttonReportesInventario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonReportesInventario.Name = "buttonReportesInventario";
-            this.buttonReportesInventario.Size = new System.Drawing.Size(216, 57);
+            this.buttonReportesInventario.Size = new System.Drawing.Size(288, 70);
             this.buttonReportesInventario.TabIndex = 7;
             this.buttonReportesInventario.Text = "Reportes Inventario";
             this.buttonReportesInventario.UseVisualStyleBackColor = false;
@@ -276,10 +276,10 @@ namespace Presentation.Forms
             this.buttonReportesMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReportesMantenimiento.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReportesMantenimiento.ForeColor = System.Drawing.Color.White;
-            this.buttonReportesMantenimiento.Location = new System.Drawing.Point(74, 58);
-            this.buttonReportesMantenimiento.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonReportesMantenimiento.Location = new System.Drawing.Point(98, 71);
+            this.buttonReportesMantenimiento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonReportesMantenimiento.Name = "buttonReportesMantenimiento";
-            this.buttonReportesMantenimiento.Size = new System.Drawing.Size(216, 57);
+            this.buttonReportesMantenimiento.Size = new System.Drawing.Size(288, 70);
             this.buttonReportesMantenimiento.TabIndex = 6;
             this.buttonReportesMantenimiento.Text = "Reportes Mantenimiento";
             this.buttonReportesMantenimiento.UseVisualStyleBackColor = false;
@@ -295,10 +295,10 @@ namespace Presentation.Forms
             this.buttonReportesAverias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReportesAverias.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReportesAverias.ForeColor = System.Drawing.Color.White;
-            this.buttonReportesAverias.Location = new System.Drawing.Point(74, 1);
-            this.buttonReportesAverias.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonReportesAverias.Location = new System.Drawing.Point(98, 1);
+            this.buttonReportesAverias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonReportesAverias.Name = "buttonReportesAverias";
-            this.buttonReportesAverias.Size = new System.Drawing.Size(216, 57);
+            this.buttonReportesAverias.Size = new System.Drawing.Size(288, 70);
             this.buttonReportesAverias.TabIndex = 5;
             this.buttonReportesAverias.Text = "Reportes Averías";
             this.buttonReportesAverias.UseVisualStyleBackColor = false;
@@ -315,10 +315,10 @@ namespace Presentation.Forms
             this.buttonReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReportes.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReportes.ForeColor = System.Drawing.Color.White;
-            this.buttonReportes.Location = new System.Drawing.Point(0, 171);
-            this.buttonReportes.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonReportes.Location = new System.Drawing.Point(0, 210);
+            this.buttonReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonReportes.Name = "buttonReportes";
-            this.buttonReportes.Size = new System.Drawing.Size(290, 57);
+            this.buttonReportes.Size = new System.Drawing.Size(386, 70);
             this.buttonReportes.TabIndex = 3;
             this.buttonReportes.Text = "Reportes";
             this.buttonReportes.UseVisualStyleBackColor = false;
@@ -335,10 +335,10 @@ namespace Presentation.Forms
             this.buttonMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMantenimiento.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMantenimiento.ForeColor = System.Drawing.Color.White;
-            this.buttonMantenimiento.Location = new System.Drawing.Point(0, 114);
-            this.buttonMantenimiento.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonMantenimiento.Location = new System.Drawing.Point(0, 140);
+            this.buttonMantenimiento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonMantenimiento.Name = "buttonMantenimiento";
-            this.buttonMantenimiento.Size = new System.Drawing.Size(290, 57);
+            this.buttonMantenimiento.Size = new System.Drawing.Size(386, 70);
             this.buttonMantenimiento.TabIndex = 2;
             this.buttonMantenimiento.Text = "Mantenimiento";
             this.buttonMantenimiento.UseVisualStyleBackColor = false;
@@ -355,10 +355,10 @@ namespace Presentation.Forms
             this.buttonAverias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAverias.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAverias.ForeColor = System.Drawing.Color.White;
-            this.buttonAverias.Location = new System.Drawing.Point(0, 57);
-            this.buttonAverias.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAverias.Location = new System.Drawing.Point(0, 70);
+            this.buttonAverias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAverias.Name = "buttonAverias";
-            this.buttonAverias.Size = new System.Drawing.Size(290, 57);
+            this.buttonAverias.Size = new System.Drawing.Size(386, 70);
             this.buttonAverias.TabIndex = 1;
             this.buttonAverias.Text = "Averías";
             this.buttonAverias.UseVisualStyleBackColor = false;
@@ -376,9 +376,9 @@ namespace Presentation.Forms
             this.buttonInventario.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonInventario.ForeColor = System.Drawing.Color.White;
             this.buttonInventario.Location = new System.Drawing.Point(0, 0);
-            this.buttonInventario.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonInventario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonInventario.Name = "buttonInventario";
-            this.buttonInventario.Size = new System.Drawing.Size(290, 57);
+            this.buttonInventario.Size = new System.Drawing.Size(386, 70);
             this.buttonInventario.TabIndex = 0;
             this.buttonInventario.Text = "Inventario";
             this.buttonInventario.UseVisualStyleBackColor = false;
@@ -389,28 +389,27 @@ namespace Presentation.Forms
             this.panelMainFrm.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panelMainFrm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panelMainFrm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMainFrm.Location = new System.Drawing.Point(290, 122);
-            this.panelMainFrm.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMainFrm.Location = new System.Drawing.Point(386, 150);
+            this.panelMainFrm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMainFrm.Name = "panelMainFrm";
-            this.panelMainFrm.Size = new System.Drawing.Size(703, 487);
+            this.panelMainFrm.Size = new System.Drawing.Size(936, 638);
             this.panelMainFrm.TabIndex = 6;
             this.panelMainFrm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMainFrm_Paint_1);
             // 
             // FormHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 609);
+            this.ClientSize = new System.Drawing.Size(1322, 788);
             this.Controls.Add(this.panelMainFrm);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelHeader);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(1009, 597);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1340, 835);
             this.Name = "FormHome";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormHome_FormClosing);
             this.Load += new System.EventHandler(this.FormHome_Load);
             this.panelHeader.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -431,6 +430,7 @@ namespace Presentation.Forms
         private System.Windows.Forms.Button buttonLogo;
         private System.Windows.Forms.Panel panelProfile;
         private System.Windows.Forms.Button buttonInventario;
+        private System.Windows.Forms.PictureBox pictureBoxProfile;
         private System.Windows.Forms.Label labelUsr;
         private System.Windows.Forms.Button buttonReportes;
         private System.Windows.Forms.Button buttonMantenimiento;
@@ -445,7 +445,6 @@ namespace Presentation.Forms
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button cs;
         public System.Windows.Forms.Panel panelMainFrm;
-        private System.Windows.Forms.PictureBox pictureBoxProfile;
     }
 }
 

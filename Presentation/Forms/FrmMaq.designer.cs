@@ -96,7 +96,6 @@ namespace Presentation.Forms
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -261,11 +260,11 @@ namespace Presentation.Forms
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(117, 296);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
+            this.textBox1.Size = new System.Drawing.Size(156, 19);
             this.textBox1.TabIndex = 151;
             // 
             // textBox2
@@ -273,11 +272,11 @@ namespace Presentation.Forms
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(117, 256);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 20);
+            this.textBox2.Size = new System.Drawing.Size(156, 19);
             this.textBox2.TabIndex = 150;
             // 
             // TxtCelular
@@ -285,11 +284,11 @@ namespace Presentation.Forms
             this.TxtCelular.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtCelular.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.TxtCelular.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtCelular.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCelular.Location = new System.Drawing.Point(118, 140);
             this.TxtCelular.Margin = new System.Windows.Forms.Padding(2);
             this.TxtCelular.Name = "TxtCelular";
-            this.TxtCelular.Size = new System.Drawing.Size(156, 20);
+            this.TxtCelular.Size = new System.Drawing.Size(156, 19);
             this.TxtCelular.TabIndex = 149;
             // 
             // TxtApellido
@@ -297,11 +296,11 @@ namespace Presentation.Forms
             this.TxtApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtApellido.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.TxtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtApellido.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtApellido.Location = new System.Drawing.Point(118, 100);
             this.TxtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.TxtApellido.Name = "TxtApellido";
-            this.TxtApellido.Size = new System.Drawing.Size(156, 20);
+            this.TxtApellido.Size = new System.Drawing.Size(156, 19);
             this.TxtApellido.TabIndex = 148;
             // 
             // TxtConfirmarContra
@@ -309,11 +308,11 @@ namespace Presentation.Forms
             this.TxtConfirmarContra.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtConfirmarContra.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.TxtConfirmarContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtConfirmarContra.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtConfirmarContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtConfirmarContra.Location = new System.Drawing.Point(117, 219);
             this.TxtConfirmarContra.Margin = new System.Windows.Forms.Padding(2);
             this.TxtConfirmarContra.Name = "TxtConfirmarContra";
-            this.TxtConfirmarContra.Size = new System.Drawing.Size(156, 20);
+            this.TxtConfirmarContra.Size = new System.Drawing.Size(156, 19);
             this.TxtConfirmarContra.TabIndex = 147;
             // 
             // TxtContraseña
@@ -321,11 +320,11 @@ namespace Presentation.Forms
             this.TxtContraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtContraseña.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.TxtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtContraseña.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtContraseña.Location = new System.Drawing.Point(117, 182);
             this.TxtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.TxtContraseña.Name = "TxtContraseña";
-            this.TxtContraseña.Size = new System.Drawing.Size(157, 20);
+            this.TxtContraseña.Size = new System.Drawing.Size(157, 19);
             this.TxtContraseña.TabIndex = 146;
             // 
             // FrmMaq

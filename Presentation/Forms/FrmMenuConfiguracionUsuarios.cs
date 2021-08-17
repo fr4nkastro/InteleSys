@@ -21,51 +21,12 @@ namespace Presentation.Forms
             InitializeComponent();
         }
 
-        private void textBoxSearch_Enter(object sender, EventArgs e)
-        {
-            if (textBoxSearch.Text == "Buscar Usuario...")
-            {
-                textBoxSearch.Text = "";
-            }
-        }
-
-        private void textBoxSearch_Leave(object sender, EventArgs e)
-        {
-            if (textBoxSearch.Text.Trim() == "")
-            {
-                textBoxSearch.Text = "Buscar Usuario...";
-            }
-        }
-        private void FrmMenuConfiguracionUsuarios_Load(object sender, EventArgs e)
-        {
-            textBoxSearch.Text = "Buscar Usuario...";
-            comboBoxFilters.Text = "Seleccione un filtro...";
-
-        }
-        private void comboBoxFiltros_Enter(object sender, EventArgs e)
-        {
-            if (comboBoxFilters.Text == "Seleccione un filtro")
-            {
-                comboBoxFilters.Text = "";
-                comboBoxFilters.ForeColor = Color.Black;
-            }
-        }
-
-        private void comboBoxFiltros_Leave(object sender, EventArgs e)
-        {
-            if (comboBoxFilters.Text == "")
-            {
-                comboBoxFilters.Text = "Seleccione un filtro";
-                comboBoxFilters.ForeColor = Color.DimGray;
-            }
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             FrmIngresoUsuario fiu = new FrmIngresoUsuario();
             fiu.Show();
             //OpenForm(new FrmIngresoUsuario());
-            
+
 
         }
         private void OpenForm(Form FormHijo)

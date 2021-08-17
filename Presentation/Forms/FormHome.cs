@@ -128,8 +128,6 @@ namespace Presentation.Forms
             FrmInventario formInventario = new FrmInventario(this);
             FrmMenuInventario formMenuInventario = new FrmMenuInventario(formInventario);
             formInventario.frmMenu = formMenuInventario;
-            
-            
 
             OpenForm(formInventario);
             OpenFormMenu(formMenuInventario);
@@ -154,18 +152,24 @@ namespace Presentation.Forms
 
         private void buttonAverias_Click(object sender, EventArgs e)
         {
-            OpenForm(new FrmAverias());
-            OpenFormMenu(new FrmMenuAveria());
+            FrmAverias formAverias = new FrmAverias(this);
+            FrmMenuAveria formMenuAveria = new FrmMenuAveria(formAverias);
+            formAverias.frmMenu = formMenuAveria;
+
+            OpenForm(formAverias);
+            OpenFormMenu(formMenuAveria);
         }
 
         private void buttonMantenimiento_Click(object sender, EventArgs e)
         {
-            var frmMantenimientoDetallado = new FrmMantenimientoDetallado();
-            var frmMenuMantenimientoDetallado = new FrmMenuMantenimiento();
-            frmMantenimientoDetallado.frmMenu = frmMenuMantenimientoDetallado;
-            frmMenuMantenimientoDetallado.frmParent = frmMantenimientoDetallado;
-            OpenForm(frmMantenimientoDetallado);
-            OpenFormMenu(frmMenuMantenimientoDetallado);
+
+            FrmMantenimientoDetallado formMantenimiento = new FrmMantenimientoDetallado(this);
+            FrmMenuMantenimiento formMenuMante = new FrmMenuMantenimiento(formMantenimiento);
+            formMantenimiento.frmMenu = formMenuMante;
+
+
+            OpenForm(formMantenimiento);
+            OpenFormMenu(formMenuMante);
         }
 
         private void buttonReportesAverias_Click(object sender, EventArgs e)
@@ -239,6 +243,12 @@ namespace Presentation.Forms
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void FormHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            new FormLogin().Show();
+            this.Dispose();
         }
     }
 }

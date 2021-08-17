@@ -17,44 +17,9 @@ namespace Presentation.Forms
             InitializeComponent();
         }
 
-        private void textBoxSearch_Enter(object sender, EventArgs e)
-        {
-            if (textBoxSearch.Text == "Buscar Reporte...")
-            {
-                textBoxSearch.Text = "";
-            }
-        }
-
-        private void textBoxSearch_Leave(object sender, EventArgs e)
-        {
-            if (textBoxSearch.Text.Trim() == "")
-            {
-                textBoxSearch.Text = "Buscar Reporte...";
-            }
-        }
         private void FrmMenuReporteAveria_Load(object sender, EventArgs e)
         {
-            textBoxSearch.Text = "Buscar Reporte...";
-            comboBoxFilters.Text = "Seleccione un filtro...";
 
-        }
-
-        private void comboBoxFiltros_Enter(object sender, EventArgs e)
-        {
-            if (comboBoxFilters.Text == "Seleccione un filtro")
-            {
-                comboBoxFilters.Text = "";
-                comboBoxFilters.ForeColor = Color.Black;
-            }
-        }
-
-        private void comboBoxFiltros_Leave(object sender, EventArgs e)
-        {
-            if (comboBoxFilters.Text == "")
-            {
-                comboBoxFilters.Text = "Seleccione un filtro";
-                comboBoxFilters.ForeColor = Color.DimGray;
-            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

@@ -31,9 +31,7 @@ namespace Presentation.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuMantenimiento));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelDatePicker = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBoxFechas = new System.Windows.Forms.ComboBox();
+            this.comboBoxFilters = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -45,6 +43,7 @@ namespace Presentation.Forms
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
@@ -52,9 +51,8 @@ namespace Presentation.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.labelDatePicker);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.comboBoxFechas);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.comboBoxFilters);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBoxSearch);
             this.panel1.Controls.Add(this.pictureBox8);
@@ -68,48 +66,27 @@ namespace Presentation.Forms
             this.panel1.Controls.Add(this.button2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(512, 110);
+            this.panel1.Size = new System.Drawing.Size(683, 135);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.Enter += new System.EventHandler(this.panel1_Enter);
             // 
-            // labelDatePicker
+            // comboBoxFilters
             // 
-            this.labelDatePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelDatePicker.AutoSize = true;
-            this.labelDatePicker.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDatePicker.Location = new System.Drawing.Point(316, 28);
-            this.labelDatePicker.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelDatePicker.Name = "labelDatePicker";
-            this.labelDatePicker.Size = new System.Drawing.Size(138, 18);
-            this.labelDatePicker.TabIndex = 151;
-            this.labelDatePicker.Text = "Seleccione una fecha";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(276, 2);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(226, 22);
-            this.dateTimePicker1.TabIndex = 150;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // comboBoxFechas
-            // 
-            this.comboBoxFechas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxFechas.BackColor = System.Drawing.Color.White;
-            this.comboBoxFechas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxFechas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxFechas.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxFechas.FormattingEnabled = true;
-            this.comboBoxFechas.Location = new System.Drawing.Point(276, 49);
-            this.comboBoxFechas.Name = "comboBoxFechas";
-            this.comboBoxFechas.Size = new System.Drawing.Size(226, 22);
-            this.comboBoxFechas.TabIndex = 149;
-            this.comboBoxFechas.Enter += new System.EventHandler(this.comboBoxFilters_Enter);
-            this.comboBoxFechas.Leave += new System.EventHandler(this.comboBoxFilters_Leave);
+            this.comboBoxFilters.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.comboBoxFilters.BackColor = System.Drawing.Color.White;
+            this.comboBoxFilters.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxFilters.FormattingEnabled = true;
+            this.comboBoxFilters.Location = new System.Drawing.Point(368, 15);
+            this.comboBoxFilters.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxFilters.Name = "comboBoxFilters";
+            this.comboBoxFilters.Size = new System.Drawing.Size(300, 26);
+            this.comboBoxFilters.TabIndex = 149;
+            this.comboBoxFilters.SelectedIndexChanged += new System.EventHandler(this.comboBoxFilters_SelectedIndexChanged);
+            this.comboBoxFilters.Enter += new System.EventHandler(this.comboBoxFilters_Enter);
+            this.comboBoxFilters.Leave += new System.EventHandler(this.comboBoxFilters_Leave);
             // 
             // button1
             // 
@@ -121,9 +98,10 @@ namespace Presentation.Forms
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(189, 12);
+            this.button1.Location = new System.Drawing.Point(252, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 28);
+            this.button1.Size = new System.Drawing.Size(37, 34);
             this.button1.TabIndex = 147;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -134,9 +112,10 @@ namespace Presentation.Forms
             this.textBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBoxSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxSearch.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.Location = new System.Drawing.Point(16, 11);
+            this.textBoxSearch.Location = new System.Drawing.Point(22, 13);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(166, 15);
+            this.textBoxSearch.Size = new System.Drawing.Size(222, 19);
             this.textBoxSearch.TabIndex = 146;
             this.textBoxSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxSearch.Enter += new System.EventHandler(this.textBoxSearch_Enter);
@@ -147,9 +126,10 @@ namespace Presentation.Forms
             this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox8.Location = new System.Drawing.Point(12, 28);
+            this.pictureBox8.Location = new System.Drawing.Point(16, 34);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(172, 8);
+            this.pictureBox8.Size = new System.Drawing.Size(230, 10);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 148;
             this.pictureBox8.TabStop = false;
@@ -157,52 +137,47 @@ namespace Presentation.Forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(108, 91);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(149, 113);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 18);
+            this.label4.Size = new System.Drawing.Size(45, 17);
             this.label4.TabIndex = 145;
             this.label4.Text = "Borrar";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(58, 92);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(78, 113);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 18);
+            this.label3.Size = new System.Drawing.Size(42, 17);
             this.label3.TabIndex = 144;
             this.label3.Text = "Editar";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1, 91);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(9, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 18);
+            this.label2.Size = new System.Drawing.Size(44, 17);
             this.label2.TabIndex = 143;
             this.label2.Text = "Nuevo";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Maroon;
-            this.panel3.Location = new System.Drawing.Point(105, 55);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(140, 68);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1, 32);
+            this.panel3.Size = new System.Drawing.Size(1, 39);
             this.panel3.TabIndex = 142;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Maroon;
-            this.panel2.Location = new System.Drawing.Point(53, 56);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(71, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1, 32);
+            this.panel2.Size = new System.Drawing.Size(1, 39);
             this.panel2.TabIndex = 1;
             // 
             // button4
@@ -212,9 +187,10 @@ namespace Presentation.Forms
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(114, 56);
+            this.button4.Location = new System.Drawing.Point(152, 69);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(36, 36);
+            this.button4.Size = new System.Drawing.Size(48, 44);
             this.button4.TabIndex = 141;
             this.button4.UseVisualStyleBackColor = true;
             // 
@@ -225,9 +201,10 @@ namespace Presentation.Forms
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(61, 56);
+            this.button3.Location = new System.Drawing.Point(81, 69);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(39, 36);
+            this.button3.Size = new System.Drawing.Size(52, 44);
             this.button3.TabIndex = 140;
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -238,19 +215,33 @@ namespace Presentation.Forms
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(8, 56);
+            this.button2.Location = new System.Drawing.Point(11, 69);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(32, 36);
+            this.button2.Size = new System.Drawing.Size(43, 44);
             this.button2.TabIndex = 139;
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.comboBox1.BackColor = System.Drawing.Color.White;
+            this.comboBox1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(368, 68);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(300, 26);
+            this.comboBox1.TabIndex = 150;
+            // 
             // FrmMenuMantenimiento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 110);
+            this.ClientSize = new System.Drawing.Size(683, 135);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMenuMantenimiento";
             this.Text = "frmMenuRegistroDiario";
             this.Load += new System.EventHandler(this.FrmMenuMantenimiento_Load);
@@ -272,11 +263,10 @@ namespace Presentation.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBoxFechas;
+        private System.Windows.Forms.ComboBox comboBoxFilters;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label labelDatePicker;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

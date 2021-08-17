@@ -192,7 +192,7 @@ namespace Presentation.Forms
             objPieza.articulo_id = newId;
             objPieza.descripcion = textBoxDescripcion.Text;
             objPieza.precio_costo = decimal.Parse(textBoxPrecioCosto.Text);
-            objPieza.modelo_id = modelInventarioGeneral.modeloMaquinas[comboBoxModeloMaquina.SelectedIndex - 1].id;
+            objPieza.modelo_id = modelInventarioGeneral.modeloMaquinas[comboBoxModeloMaquina.SelectedIndex -1 ].id;
             objPieza.isv = objPieza.precio_costo * (decimal)0.15;
             objPieza.iva = objPieza.precio_costo * (decimal)0.25;
             objPieza.serialno = textBoxSerialNo.Text;
@@ -254,6 +254,10 @@ namespace Presentation.Forms
             textBoxCantidad.Clear();
             textBoxPrecioCosto.Clear();
             textBoxSerialNo.Clear();
+            
+            
+
+
         }
     }
 }

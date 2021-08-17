@@ -87,28 +87,28 @@ namespace Presentation.Forms
             this.panel1.Controls.Add(this.textBoxSearch);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(782, 114);
+            this.panel1.Size = new System.Drawing.Size(1043, 140);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Maroon;
             this.panel11.Controls.Add(this.panel12);
-            this.panel11.Location = new System.Drawing.Point(146, 11);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Location = new System.Drawing.Point(194, 14);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1, 32);
+            this.panel11.Size = new System.Drawing.Size(1, 39);
             this.panel11.TabIndex = 161;
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Maroon;
             this.panel12.Controls.Add(this.panel13);
-            this.panel12.Location = new System.Drawing.Point(47, 0);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Location = new System.Drawing.Point(63, 0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1, 32);
+            this.panel12.Size = new System.Drawing.Size(1, 39);
             this.panel12.TabIndex = 160;
             // 
             // panel13
@@ -116,38 +116,34 @@ namespace Presentation.Forms
             this.panel13.BackColor = System.Drawing.Color.Maroon;
             this.panel13.Controls.Add(this.panel14);
             this.panel13.Location = new System.Drawing.Point(2, 0);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1, 32);
+            this.panel13.Size = new System.Drawing.Size(1, 39);
             this.panel13.TabIndex = 160;
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Maroon;
-            this.panel14.Location = new System.Drawing.Point(58, 0);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Location = new System.Drawing.Point(77, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1, 32);
+            this.panel14.Size = new System.Drawing.Size(1, 39);
             this.panel14.TabIndex = 161;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Maroon;
             this.panel7.Controls.Add(this.panel8);
-            this.panel7.Location = new System.Drawing.Point(94, 11);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Location = new System.Drawing.Point(126, 14);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1, 32);
+            this.panel7.Size = new System.Drawing.Size(1, 39);
             this.panel7.TabIndex = 160;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Maroon;
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(47, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Location = new System.Drawing.Point(63, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1, 32);
+            this.panel8.Size = new System.Drawing.Size(1, 39);
             this.panel8.TabIndex = 160;
             // 
             // panel9
@@ -155,38 +151,34 @@ namespace Presentation.Forms
             this.panel9.BackColor = System.Drawing.Color.Maroon;
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Location = new System.Drawing.Point(2, 0);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1, 32);
+            this.panel9.Size = new System.Drawing.Size(1, 39);
             this.panel9.TabIndex = 160;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Maroon;
-            this.panel10.Location = new System.Drawing.Point(58, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Location = new System.Drawing.Point(77, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1, 32);
+            this.panel10.Size = new System.Drawing.Size(1, 39);
             this.panel10.TabIndex = 161;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Maroon;
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(48, 11);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(64, 14);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1, 32);
+            this.panel3.Size = new System.Drawing.Size(1, 39);
             this.panel3.TabIndex = 159;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Maroon;
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(47, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(63, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1, 32);
+            this.panel4.Size = new System.Drawing.Size(1, 39);
             this.panel4.TabIndex = 160;
             // 
             // panel5
@@ -194,28 +186,25 @@ namespace Presentation.Forms
             this.panel5.BackColor = System.Drawing.Color.Maroon;
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Location = new System.Drawing.Point(2, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 32);
+            this.panel5.Size = new System.Drawing.Size(1, 39);
             this.panel5.TabIndex = 160;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Maroon;
-            this.panel6.Location = new System.Drawing.Point(58, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Location = new System.Drawing.Point(77, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1, 32);
+            this.panel6.Size = new System.Drawing.Size(1, 39);
             this.panel6.TabIndex = 161;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(150, 45);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(200, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 17);
+            this.label3.Size = new System.Drawing.Size(132, 21);
             this.label3.TabIndex = 158;
             this.label3.Text = "Agregar a Factura";
             // 
@@ -223,10 +212,9 @@ namespace Presentation.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(100, 45);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(134, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 17);
+            this.label2.Size = new System.Drawing.Size(54, 21);
             this.label2.TabIndex = 157;
             this.label2.Text = "Borrar";
             // 
@@ -234,10 +222,9 @@ namespace Presentation.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 45);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(72, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 17);
+            this.label1.Size = new System.Drawing.Size(51, 21);
             this.label1.TabIndex = 156;
             this.label1.Text = "Editar";
             // 
@@ -245,10 +232,9 @@ namespace Presentation.Forms
             // 
             this.labelAñadir.AutoSize = true;
             this.labelAñadir.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAñadir.Location = new System.Drawing.Point(9, 45);
-            this.labelAñadir.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAñadir.Location = new System.Drawing.Point(12, 55);
             this.labelAñadir.Name = "labelAñadir";
-            this.labelAñadir.Size = new System.Drawing.Size(45, 17);
+            this.labelAñadir.Size = new System.Drawing.Size(56, 21);
             this.labelAñadir.TabIndex = 155;
             this.labelAñadir.Text = "Añadir";
             // 
@@ -256,10 +242,9 @@ namespace Presentation.Forms
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel2.Location = new System.Drawing.Point(473, 38);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(631, 47);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(254, 2);
+            this.panel2.Size = new System.Drawing.Size(339, 2);
             this.panel2.TabIndex = 154;
             // 
             // buttonAddToBill
@@ -271,9 +256,10 @@ namespace Presentation.Forms
             this.buttonAddToBill.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonAddToBill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonAddToBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddToBill.Location = new System.Drawing.Point(153, 9);
+            this.buttonAddToBill.Location = new System.Drawing.Point(204, 11);
+            this.buttonAddToBill.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAddToBill.Name = "buttonAddToBill";
-            this.buttonAddToBill.Size = new System.Drawing.Size(34, 36);
+            this.buttonAddToBill.Size = new System.Drawing.Size(46, 44);
             this.buttonAddToBill.TabIndex = 151;
             this.buttonAddToBill.UseVisualStyleBackColor = true;
             this.buttonAddToBill.Click += new System.EventHandler(this.button5_Click);
@@ -287,11 +273,13 @@ namespace Presentation.Forms
             this.buttonRemove.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonRemove.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRemove.Location = new System.Drawing.Point(104, 6);
+            this.buttonRemove.Location = new System.Drawing.Point(139, 8);
+            this.buttonRemove.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRemove.Name = "buttonRemove";
-            this.buttonRemove.Size = new System.Drawing.Size(32, 34);
+            this.buttonRemove.Size = new System.Drawing.Size(43, 42);
             this.buttonRemove.TabIndex = 149;
             this.buttonRemove.UseVisualStyleBackColor = true;
+            this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
             // buttonEdit
             // 
@@ -302,9 +290,10 @@ namespace Presentation.Forms
             this.buttonEdit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEdit.Location = new System.Drawing.Point(56, 6);
+            this.buttonEdit.Location = new System.Drawing.Point(75, 8);
+            this.buttonEdit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(31, 35);
+            this.buttonEdit.Size = new System.Drawing.Size(41, 43);
             this.buttonEdit.TabIndex = 148;
             this.buttonEdit.UseVisualStyleBackColor = true;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
@@ -318,9 +307,10 @@ namespace Presentation.Forms
             this.buttonAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Location = new System.Drawing.Point(10, 9);
+            this.buttonAdd.Location = new System.Drawing.Point(14, 11);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(32, 31);
+            this.buttonAdd.Size = new System.Drawing.Size(43, 38);
             this.buttonAdd.TabIndex = 147;
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -329,12 +319,11 @@ namespace Presentation.Forms
             // 
             this.comboBoxFiltros.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxFiltros.BackColor = System.Drawing.Color.White;
-            this.comboBoxFiltros.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxFiltros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxFiltros.FormattingEnabled = true;
-            this.comboBoxFiltros.Location = new System.Drawing.Point(492, 49);
+            this.comboBoxFiltros.Location = new System.Drawing.Point(656, 60);
+            this.comboBoxFiltros.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxFiltros.Name = "comboBoxFiltros";
-            this.comboBoxFiltros.Size = new System.Drawing.Size(235, 21);
+            this.comboBoxFiltros.Size = new System.Drawing.Size(312, 24);
             this.comboBoxFiltros.TabIndex = 146;
             this.comboBoxFiltros.Enter += new System.EventHandler(this.comboBoxFiltros_Enter);
             this.comboBoxFiltros.Leave += new System.EventHandler(this.comboBoxFiltros_Leave);
@@ -349,9 +338,10 @@ namespace Presentation.Forms
             this.buttonSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSearch.Location = new System.Drawing.Point(737, 9);
+            this.buttonSearch.Location = new System.Drawing.Point(983, 11);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(35, 34);
+            this.buttonSearch.Size = new System.Drawing.Size(47, 42);
             this.buttonSearch.TabIndex = 144;
             this.buttonSearch.UseVisualStyleBackColor = true;
             // 
@@ -361,9 +351,10 @@ namespace Presentation.Forms
             this.textBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBoxSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxSearch.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.Location = new System.Drawing.Point(466, 19);
+            this.textBoxSearch.Location = new System.Drawing.Point(622, 23);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(266, 17);
+            this.textBoxSearch.Size = new System.Drawing.Size(355, 21);
             this.textBoxSearch.TabIndex = 143;
             this.textBoxSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
@@ -372,11 +363,12 @@ namespace Presentation.Forms
             // 
             // FrmMenuInventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 114);
+            this.ClientSize = new System.Drawing.Size(1043, 140);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMenuInventario";
             this.Text = "frmMenuInventario";
             this.Load += new System.EventHandler(this.FrmMenuInventario_Load);

@@ -33,9 +33,6 @@ namespace Presentation.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInventario));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelCrud = new System.Windows.Forms.Panel();
-            this.comboBoxInventario = new System.Windows.Forms.ComboBox();
-            this.textBoxCantidad = new System.Windows.Forms.TextBox();
-            this.comboBoxTipoArticulo = new System.Windows.Forms.ComboBox();
             this.buttonAñadir = new System.Windows.Forms.Button();
             this.textBoxPrecioCosto = new System.Windows.Forms.TextBox();
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
@@ -52,6 +49,9 @@ namespace Presentation.Forms
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.comboBoxTipoArticulo = new System.Windows.Forms.ComboBox();
+            this.textBoxCantidad = new System.Windows.Forms.TextBox();
+            this.comboBoxInventario = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelCrud.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -67,12 +67,11 @@ namespace Presentation.Forms
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(621, 498);
+            this.dataGridView1.Size = new System.Drawing.Size(828, 613);
             this.dataGridView1.TabIndex = 2;
             // 
             // panelCrud
@@ -87,71 +86,27 @@ namespace Presentation.Forms
             this.panelCrud.Controls.Add(this.comboBoxModeloMaquina);
             this.panelCrud.Controls.Add(this.bindingNavigator1);
             this.panelCrud.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelCrud.Location = new System.Drawing.Point(621, 0);
-            this.panelCrud.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelCrud.Location = new System.Drawing.Point(828, 0);
             this.panelCrud.Name = "panelCrud";
-            this.panelCrud.Size = new System.Drawing.Size(212, 498);
+            this.panelCrud.Size = new System.Drawing.Size(283, 613);
             this.panelCrud.TabIndex = 3;
-            // 
-            // comboBoxInventario
-            // 
-            this.comboBoxInventario.BackColor = System.Drawing.Color.White;
-            this.comboBoxInventario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxInventario.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxInventario.FormattingEnabled = true;
-            this.comboBoxInventario.Items.AddRange(new object[] {
-            "San Pedro Sula",
-            "Tegucigalpa"});
-            this.comboBoxInventario.Location = new System.Drawing.Point(16, 28);
-            this.comboBoxInventario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBoxInventario.Name = "comboBoxInventario";
-            this.comboBoxInventario.Size = new System.Drawing.Size(188, 25);
-            this.comboBoxInventario.TabIndex = 12;
-            // 
-            // textBoxCantidad
-            // 
-            this.textBoxCantidad.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCantidad.Location = new System.Drawing.Point(16, 197);
-            this.textBoxCantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxCantidad.Name = "textBoxCantidad";
-            this.textBoxCantidad.Size = new System.Drawing.Size(188, 24);
-            this.textBoxCantidad.TabIndex = 11;
-            this.textBoxCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // comboBoxTipoArticulo
-            // 
-            this.comboBoxTipoArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxTipoArticulo.FormattingEnabled = true;
-            this.comboBoxTipoArticulo.Location = new System.Drawing.Point(16, 85);
-            this.comboBoxTipoArticulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBoxTipoArticulo.Name = "comboBoxTipoArticulo";
-            this.comboBoxTipoArticulo.Size = new System.Drawing.Size(188, 21);
-            this.comboBoxTipoArticulo.TabIndex = 10;
             // 
             // buttonAñadir
             // 
-            this.buttonAñadir.BackColor = System.Drawing.Color.Maroon;
-            this.buttonAñadir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAñadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAñadir.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAñadir.ForeColor = System.Drawing.Color.White;
-            this.buttonAñadir.Location = new System.Drawing.Point(16, 225);
-            this.buttonAñadir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAñadir.Location = new System.Drawing.Point(46, 296);
             this.buttonAñadir.Name = "buttonAñadir";
-            this.buttonAñadir.Size = new System.Drawing.Size(69, 29);
+            this.buttonAñadir.Size = new System.Drawing.Size(75, 23);
             this.buttonAñadir.TabIndex = 8;
             this.buttonAñadir.Text = "Añadir";
-            this.buttonAñadir.UseVisualStyleBackColor = false;
+            this.buttonAñadir.UseVisualStyleBackColor = true;
             this.buttonAñadir.Click += new System.EventHandler(this.buttonAñadir_Click);
             // 
             // textBoxPrecioCosto
             // 
             this.textBoxPrecioCosto.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPrecioCosto.Location = new System.Drawing.Point(16, 169);
-            this.textBoxPrecioCosto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPrecioCosto.Location = new System.Drawing.Point(21, 208);
             this.textBoxPrecioCosto.Name = "textBoxPrecioCosto";
-            this.textBoxPrecioCosto.Size = new System.Drawing.Size(188, 24);
+            this.textBoxPrecioCosto.Size = new System.Drawing.Size(250, 28);
             this.textBoxPrecioCosto.TabIndex = 7;
             this.textBoxPrecioCosto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxPrecioCosto.Enter += new System.EventHandler(this.textBoxPrecioCosto_Enter);
@@ -160,10 +115,9 @@ namespace Presentation.Forms
             // textBoxDescripcion
             // 
             this.textBoxDescripcion.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDescripcion.Location = new System.Drawing.Point(16, 141);
-            this.textBoxDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDescripcion.Location = new System.Drawing.Point(21, 174);
             this.textBoxDescripcion.Name = "textBoxDescripcion";
-            this.textBoxDescripcion.Size = new System.Drawing.Size(188, 24);
+            this.textBoxDescripcion.Size = new System.Drawing.Size(250, 28);
             this.textBoxDescripcion.TabIndex = 6;
             this.textBoxDescripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxDescripcion.Enter += new System.EventHandler(this.textBoxDescripcion_Enter);
@@ -172,10 +126,9 @@ namespace Presentation.Forms
             // textBoxSerialNo
             // 
             this.textBoxSerialNo.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSerialNo.Location = new System.Drawing.Point(16, 114);
-            this.textBoxSerialNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSerialNo.Location = new System.Drawing.Point(21, 140);
             this.textBoxSerialNo.Name = "textBoxSerialNo";
-            this.textBoxSerialNo.Size = new System.Drawing.Size(188, 24);
+            this.textBoxSerialNo.Size = new System.Drawing.Size(250, 28);
             this.textBoxSerialNo.TabIndex = 5;
             this.textBoxSerialNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxSerialNo.Enter += new System.EventHandler(this.textBoxSerialNo_Enter);
@@ -183,13 +136,11 @@ namespace Presentation.Forms
             // 
             // comboBoxModeloMaquina
             // 
-            this.comboBoxModeloMaquina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxModeloMaquina.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxModeloMaquina.FormattingEnabled = true;
-            this.comboBoxModeloMaquina.Location = new System.Drawing.Point(16, 57);
-            this.comboBoxModeloMaquina.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxModeloMaquina.Location = new System.Drawing.Point(21, 70);
             this.comboBoxModeloMaquina.Name = "comboBoxModeloMaquina";
-            this.comboBoxModeloMaquina.Size = new System.Drawing.Size(188, 25);
+            this.comboBoxModeloMaquina.Size = new System.Drawing.Size(250, 29);
             this.comboBoxModeloMaquina.TabIndex = 4;
             this.comboBoxModeloMaquina.TextChanged += new System.EventHandler(this.comboBoxModeloId_TextChanged);
             this.comboBoxModeloMaquina.Enter += new System.EventHandler(this.comboBoxModeloId_Enter);
@@ -220,14 +171,14 @@ namespace Presentation.Forms
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(212, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(283, 31);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -237,7 +188,7 @@ namespace Presentation.Forms
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -246,28 +197,27 @@ namespace Presentation.Forms
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -275,7 +225,7 @@ namespace Presentation.Forms
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -284,22 +234,53 @@ namespace Presentation.Forms
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            // 
+            // comboBoxTipoArticulo
+            // 
+            this.comboBoxTipoArticulo.FormattingEnabled = true;
+            this.comboBoxTipoArticulo.Location = new System.Drawing.Point(21, 105);
+            this.comboBoxTipoArticulo.Name = "comboBoxTipoArticulo";
+            this.comboBoxTipoArticulo.Size = new System.Drawing.Size(250, 24);
+            this.comboBoxTipoArticulo.TabIndex = 10;
+            // 
+            // textBoxCantidad
+            // 
+            this.textBoxCantidad.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCantidad.Location = new System.Drawing.Point(21, 242);
+            this.textBoxCantidad.Name = "textBoxCantidad";
+            this.textBoxCantidad.Size = new System.Drawing.Size(250, 28);
+            this.textBoxCantidad.TabIndex = 11;
+            this.textBoxCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // comboBoxInventario
+            // 
+            this.comboBoxInventario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxInventario.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxInventario.FormattingEnabled = true;
+            this.comboBoxInventario.Items.AddRange(new object[] {
+            "San Pedro Sula",
+            "Tegucigalpa"});
+            this.comboBoxInventario.Location = new System.Drawing.Point(21, 35);
+            this.comboBoxInventario.Name = "comboBoxInventario";
+            this.comboBoxInventario.Size = new System.Drawing.Size(250, 29);
+            this.comboBoxInventario.TabIndex = 12;
             // 
             // FrmInventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(833, 498);
+            this.ClientSize = new System.Drawing.Size(1111, 613);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panelCrud);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmInventario";
             this.Text = "frmInventario";
             this.Load += new System.EventHandler(this.FrmInventario_Load);

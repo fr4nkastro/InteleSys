@@ -50,5 +50,11 @@ namespace Presentation.Forms
             //v1.Show();
 
         }
+
+        private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

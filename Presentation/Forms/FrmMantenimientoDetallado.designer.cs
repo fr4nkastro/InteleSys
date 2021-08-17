@@ -37,11 +37,11 @@ namespace Presentation.Forms
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridViewAverias = new System.Windows.Forms.DataGridView();
-            this.dataGridViewObservaciones = new System.Windows.Forms.DataGridView();
-            this.dataGridViewActividades = new System.Windows.Forms.DataGridView();
-            this.dataGridViewMaquinas = new System.Windows.Forms.DataGridView();
-            this.comboBoxEstadoMaquina = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewMaquina = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -49,10 +49,10 @@ namespace Presentation.Forms
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAverias)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewObservaciones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewActividades)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaquinas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaquina)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -64,9 +64,10 @@ namespace Presentation.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 4);
+            this.label1.Location = new System.Drawing.Point(10, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 19);
+            this.label1.Size = new System.Drawing.Size(67, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Estado";
             // 
@@ -74,9 +75,10 @@ namespace Presentation.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 3);
+            this.label2.Location = new System.Drawing.Point(10, 4);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 19);
+            this.label2.Size = new System.Drawing.Size(71, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "Averías";
             // 
@@ -84,9 +86,10 @@ namespace Presentation.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 4);
+            this.label3.Location = new System.Drawing.Point(11, 5);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 19);
+            this.label3.Size = new System.Drawing.Size(131, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "Observaciones";
             // 
@@ -94,9 +97,10 @@ namespace Presentation.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Location = new System.Drawing.Point(4, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 19);
+            this.label4.Size = new System.Drawing.Size(105, 24);
             this.label4.TabIndex = 8;
             this.label4.Text = "Actividades";
             // 
@@ -105,207 +109,194 @@ namespace Presentation.Forms
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel1.Location = new System.Drawing.Point(2, 26);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(3, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(746, 2);
+            this.panel1.Size = new System.Drawing.Size(994, 2);
             this.panel1.TabIndex = 135;
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel2.Location = new System.Drawing.Point(2, 23);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(3, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(743, 2);
+            this.panel2.Size = new System.Drawing.Size(991, 2);
             this.panel2.TabIndex = 136;
             // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel3.Location = new System.Drawing.Point(2, 25);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(3, 31);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(743, 2);
+            this.panel3.Size = new System.Drawing.Size(991, 2);
             this.panel3.TabIndex = 137;
             // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(0, 23);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(0, 28);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(743, 2);
+            this.panel4.Size = new System.Drawing.Size(991, 2);
             this.panel4.TabIndex = 138;
             // 
-            // dataGridViewAverias
+            // dataGridView1
             // 
-            this.dataGridViewAverias.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewAverias.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewAverias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAverias.Location = new System.Drawing.Point(10, 29);
-            this.dataGridViewAverias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridViewAverias.Name = "dataGridViewAverias";
-            this.dataGridViewAverias.RowHeadersWidth = 51;
-            this.dataGridViewAverias.RowTemplate.Height = 24;
-            this.dataGridViewAverias.Size = new System.Drawing.Size(744, 109);
-            this.dataGridViewAverias.TabIndex = 139;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(14, 36);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(992, 134);
+            this.dataGridView1.TabIndex = 139;
             // 
-            // dataGridViewObservaciones
+            // dataGridView2
             // 
-            this.dataGridViewObservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewObservaciones.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewObservaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewObservaciones.Location = new System.Drawing.Point(11, 37);
-            this.dataGridViewObservaciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridViewObservaciones.Name = "dataGridViewObservaciones";
-            this.dataGridViewObservaciones.RowHeadersWidth = 51;
-            this.dataGridViewObservaciones.RowTemplate.Height = 24;
-            this.dataGridViewObservaciones.Size = new System.Drawing.Size(739, 130);
-            this.dataGridViewObservaciones.TabIndex = 140;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(15, 45);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(985, 160);
+            this.dataGridView2.TabIndex = 140;
             // 
-            // dataGridViewActividades
+            // dataGridView3
             // 
-            this.dataGridViewActividades.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewActividades.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewActividades.Location = new System.Drawing.Point(11, 30);
-            this.dataGridViewActividades.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridViewActividades.Name = "dataGridViewActividades";
-            this.dataGridViewActividades.RowHeadersWidth = 51;
-            this.dataGridViewActividades.RowTemplate.Height = 24;
-            this.dataGridViewActividades.Size = new System.Drawing.Size(739, 131);
-            this.dataGridViewActividades.TabIndex = 141;
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(15, 37);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(985, 161);
+            this.dataGridView3.TabIndex = 141;
             // 
-            // dataGridViewMaquinas
+            // dataGridViewMaquina
             // 
-            this.dataGridViewMaquinas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridViewMaquina.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dataGridViewMaquinas.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewMaquinas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMaquinas.Location = new System.Drawing.Point(4, 34);
-            this.dataGridViewMaquinas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridViewMaquinas.Name = "dataGridViewMaquinas";
-            this.dataGridViewMaquinas.RowHeadersWidth = 51;
-            this.dataGridViewMaquinas.RowTemplate.Height = 24;
-            this.dataGridViewMaquinas.Size = new System.Drawing.Size(131, 500);
-            this.dataGridViewMaquinas.TabIndex = 142;
+            this.dataGridViewMaquina.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewMaquina.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewMaquina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMaquina.Location = new System.Drawing.Point(5, 42);
+            this.dataGridViewMaquina.Name = "dataGridViewMaquina";
+            this.dataGridViewMaquina.RowHeadersWidth = 51;
+            this.dataGridViewMaquina.RowTemplate.Height = 24;
+            this.dataGridViewMaquina.Size = new System.Drawing.Size(189, 615);
+            this.dataGridViewMaquina.TabIndex = 142;
+            this.dataGridViewMaquina.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMaquina_CellClick);
             // 
-            // comboBoxEstadoMaquina
+            // comboBox1
             // 
-            this.comboBoxEstadoMaquina.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxEstadoMaquina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxEstadoMaquina.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxEstadoMaquina.FormattingEnabled = true;
-            this.comboBoxEstadoMaquina.Location = new System.Drawing.Point(10, 33);
-            this.comboBoxEstadoMaquina.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBoxEstadoMaquina.Name = "comboBoxEstadoMaquina";
-            this.comboBoxEstadoMaquina.Size = new System.Drawing.Size(146, 21);
-            this.comboBoxEstadoMaquina.TabIndex = 143;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(14, 41);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(194, 24);
+            this.comboBox1.TabIndex = 143;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 5);
+            this.label5.Location = new System.Drawing.Point(43, 6);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 19);
+            this.label5.Size = new System.Drawing.Size(93, 24);
             this.label5.TabIndex = 144;
             this.label5.Text = "Máquinas";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel5.Location = new System.Drawing.Point(8, 26);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Location = new System.Drawing.Point(11, 32);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(124, 2);
+            this.panel5.Size = new System.Drawing.Size(166, 2);
             this.panel5.TabIndex = 145;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.label5);
             this.panel6.Controls.Add(this.panel5);
-            this.panel6.Controls.Add(this.dataGridViewMaquinas);
+            this.panel6.Controls.Add(this.dataGridViewMaquina);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(150, 539);
+            this.panel6.Size = new System.Drawing.Size(200, 663);
             this.panel6.TabIndex = 146;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.panel1);
             this.panel7.Controls.Add(this.label1);
-            this.panel7.Controls.Add(this.comboBoxEstadoMaquina);
+            this.panel7.Controls.Add(this.comboBox1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(150, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Location = new System.Drawing.Point(200, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(759, 59);
+            this.panel7.Size = new System.Drawing.Size(1012, 73);
             this.panel7.TabIndex = 147;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.panel2);
             this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.dataGridViewAverias);
+            this.panel8.Controls.Add(this.dataGridView1);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(150, 59);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Location = new System.Drawing.Point(200, 73);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(759, 142);
+            this.panel8.Size = new System.Drawing.Size(1012, 175);
             this.panel8.TabIndex = 148;
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.dataGridViewObservaciones);
+            this.panel9.Controls.Add(this.dataGridView2);
             this.panel9.Controls.Add(this.label3);
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(150, 201);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Location = new System.Drawing.Point(200, 248);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(759, 171);
+            this.panel9.Size = new System.Drawing.Size(1012, 211);
             this.panel9.TabIndex = 149;
             // 
             // panel10
             // 
             this.panel10.Controls.Add(this.label4);
             this.panel10.Controls.Add(this.panel4);
-            this.panel10.Controls.Add(this.dataGridViewActividades);
+            this.panel10.Controls.Add(this.dataGridView3);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(150, 372);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Location = new System.Drawing.Point(200, 459);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(759, 173);
+            this.panel10.Size = new System.Drawing.Size(1012, 213);
             this.panel10.TabIndex = 141;
             // 
             // FrmMantenimientoDetallado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(909, 539);
+            this.ClientSize = new System.Drawing.Size(1212, 663);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMantenimientoDetallado";
             this.Text = "frmMantenimientoDetallado";
             this.Load += new System.EventHandler(this.FrmMantenimientoDetallado_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAverias)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewObservaciones)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewActividades)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaquinas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMaquina)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -329,11 +320,7 @@ namespace Presentation.Forms
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dataGridViewAverias;
-        private System.Windows.Forms.DataGridView dataGridViewObservaciones;
-        private System.Windows.Forms.DataGridView dataGridViewActividades;
-        private System.Windows.Forms.DataGridView dataGridViewMaquinas;
-        private System.Windows.Forms.ComboBox comboBoxEstadoMaquina;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
@@ -341,5 +328,9 @@ namespace Presentation.Forms
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView dataGridView2;
+        public System.Windows.Forms.DataGridView dataGridView3;
+        public System.Windows.Forms.DataGridView dataGridViewMaquina;
     }
 }

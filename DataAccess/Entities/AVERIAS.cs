@@ -23,7 +23,7 @@ namespace DataAccess.Entities
         public decimal id { get; set; }
         public string descripcion { get; set; }
         public string solucion { get; set; }
-        public decimal modelo_id { get; set; }
+        public Nullable<decimal> modelo_id { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<REGISTRO_AVERIA> REGISTRO_AVERIA { get; set; }

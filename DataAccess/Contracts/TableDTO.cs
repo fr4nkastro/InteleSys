@@ -20,42 +20,22 @@ namespace DataAccess.Contracts
             public string nombre { get; set; }
 
         }
-
-        public class MantenimientoMaquinas
+        public class Modelo
         {
             public decimal id { get; set; }
-            public string serialNO { get; set; }
+            public string Nombre { get; set; }
+            public string Descripcion { get; set; }
         }
 
-        public  class MantenimientoAverias
-        {   
-            public decimal id { get; set; }
-            public string nombre { get; set; }
-
-        }
-
-        public class MantenimientoObservaciones
+        public class MantenimientoFecha
         {
-            public decimal id { get; set; }
-            public string nombre { get; set; }
+            public Decimal id { get; set; }
+            public DateTime Fecha { get; set;}
         }
-
-        public class MantenimientoActividades
+        public class Maquina
         {
-            public decimal id
-            {
-                get; set;
-            }
-            public string nombre
-            {
-                get; set;
-            }
-        }
-
-        public class MantenimientoFechas
-        {
-            public decimal id { get; set; }
-            public DateTime date { get; set; }
+            public Decimal ID { get; set; }
+            public String Serie { get; set; }
         }
     }
 }

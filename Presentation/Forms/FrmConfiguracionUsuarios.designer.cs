@@ -29,25 +29,25 @@ namespace Presentation.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelToolBar = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // panelToolBar
+            // panel1
             // 
-            this.panelToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelToolBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelToolBar.Location = new System.Drawing.Point(0, 0);
-            this.panelToolBar.Name = "panelToolBar";
-            this.panelToolBar.Size = new System.Drawing.Size(600, 366);
-            this.panelToolBar.TabIndex = 0;
-            this.panelToolBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(600, 366);
+            this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // FrmConfiguracionUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.panelToolBar);
+            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmConfiguracionUsuarios";
             this.Text = "Configuracion de Usuario";
@@ -58,6 +58,6 @@ namespace Presentation.Forms
 
         #endregion
 
-        public System.Windows.Forms.Panel panelToolBar;
+        public System.Windows.Forms.Panel panel1;
     }
 }

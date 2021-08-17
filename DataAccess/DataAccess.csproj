@@ -56,8 +56,11 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Contracts\IGenericRepository.cs" />
     <Compile Include="Contracts\TableDTO.cs" />
+    <Compile Include="DTO\TablaAveriasModelo.cs" />
     <Compile Include="DTO\TableInventarioGeneral.cs" />
     <Compile Include="DTO\TableInventarioPiezas.cs" />
+    <Compile Include="DTO\TableMantenimientoFecha.cs" />
+    <Compile Include="DTO\TableMaquina.cs" />
     <Compile Include="Entities\ARTICULO.cs">
       <DependentUpon>ModelInteleSys.tt</DependentUpon>
     </Compile>
@@ -155,13 +158,16 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Repositories\RepositorioDTOAverias.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\RepositoryArticuloInventario.cs" />
     <Compile Include="Repositories\RepositoryArticulos.cs" />
+    <Compile Include="Repositories\RepositoryAverias.cs" />
     <Compile Include="Repositories\RepositoryDTOInventarioGeneral.cs" />
     <Compile Include="Repositories\RepositoryDTOInventarioPiezas.cs" />
     <Compile Include="Repositories\RepositoryCustomTable.cs" />
-    <Compile Include="Repositories\RepositoryDTOMantenimiento.cs" />
+    <Compile Include="Repositories\RepositoryDTOMantenimientoFecha.cs" />
+    <Compile Include="Repositories\RepositoryMantenimientoFecha.cs" />
     <Compile Include="Repositories\RepositoryPiezas.cs" />
   </ItemGroup>
   <ItemGroup>

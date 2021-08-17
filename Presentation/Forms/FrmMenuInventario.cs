@@ -147,6 +147,16 @@ namespace Presentation.Forms
         {
             formParent.status = 0;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonRemove_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

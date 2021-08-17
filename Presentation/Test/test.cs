@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Presentation.Forms
+namespace Presentation.Test
 {
-    public partial class FrmCarrito : Form
+    public partial class test : Form
     {
-        public FrmCarrito()
+        public test()
         {
             InitializeComponent();
         }

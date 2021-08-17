@@ -35,6 +35,10 @@ namespace Presentation.Forms
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.LbImagen = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.LbCorreo = new System.Windows.Forms.Label();
             this.Lbcelular = new System.Windows.Forms.Label();
             this.LbApellido = new System.Windows.Forms.Label();
@@ -59,6 +63,7 @@ namespace Presentation.Forms
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -75,6 +80,10 @@ namespace Presentation.Forms
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.LbImagen);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.LbCorreo);
             this.panel1.Controls.Add(this.Lbcelular);
             this.panel1.Controls.Add(this.LbApellido);
@@ -106,13 +115,10 @@ namespace Presentation.Forms
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(482, 480);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(455, 479);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(209, 44);
             this.button2.TabIndex = 132;
@@ -145,23 +151,71 @@ namespace Presentation.Forms
             // 
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(405, 370);
+            this.pictureBox5.Location = new System.Drawing.Point(405, 337);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(160, 10);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 126;
             this.pictureBox5.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Location = new System.Drawing.Point(44, 385);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(158, 129);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 123;
+            this.pictureBox2.TabStop = false;
+            // 
+            // LbImagen
+            // 
+            this.LbImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LbImagen.AutoSize = true;
+            this.LbImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbImagen.ForeColor = System.Drawing.Color.Black;
+            this.LbImagen.Location = new System.Drawing.Point(223, 468);
+            this.LbImagen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LbImagen.Name = "LbImagen";
+            this.LbImagen.Size = new System.Drawing.Size(53, 16);
+            this.LbImagen.TabIndex = 122;
+            this.LbImagen.Text = "Imagen";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(368, 487);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 20);
+            this.button1.TabIndex = 121;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(224, 487);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(138, 20);
+            this.textBox1.TabIndex = 120;
+            // 
             // LbCorreo
             // 
             this.LbCorreo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LbCorreo.AutoSize = true;
-            this.LbCorreo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbCorreo.ForeColor = System.Drawing.Color.Black;
             this.LbCorreo.Location = new System.Drawing.Point(23, 276);
             this.LbCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LbCorreo.Name = "LbCorreo";
-            this.LbCorreo.Size = new System.Drawing.Size(52, 19);
+            this.LbCorreo.Size = new System.Drawing.Size(49, 16);
             this.LbCorreo.TabIndex = 119;
             this.LbCorreo.Text = "Correo";
             // 
@@ -169,12 +223,12 @@ namespace Presentation.Forms
             // 
             this.Lbcelular.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Lbcelular.AutoSize = true;
-            this.Lbcelular.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbcelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbcelular.ForeColor = System.Drawing.Color.Black;
-            this.Lbcelular.Location = new System.Drawing.Point(348, 276);
+            this.Lbcelular.Location = new System.Drawing.Point(344, 276);
             this.Lbcelular.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbcelular.Name = "Lbcelular";
-            this.Lbcelular.Size = new System.Drawing.Size(55, 19);
+            this.Lbcelular.Size = new System.Drawing.Size(50, 16);
             this.Lbcelular.TabIndex = 118;
             this.Lbcelular.Text = "Celular";
             // 
@@ -182,12 +236,12 @@ namespace Presentation.Forms
             // 
             this.LbApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LbApellido.AutoSize = true;
-            this.LbApellido.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbApellido.ForeColor = System.Drawing.Color.Black;
-            this.LbApellido.Location = new System.Drawing.Point(341, 234);
+            this.LbApellido.Location = new System.Drawing.Point(344, 236);
             this.LbApellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LbApellido.Name = "LbApellido";
-            this.LbApellido.Size = new System.Drawing.Size(62, 19);
+            this.LbApellido.Size = new System.Drawing.Size(58, 16);
             this.LbApellido.TabIndex = 117;
             this.LbApellido.Text = "Apellido";
             // 
@@ -195,12 +249,12 @@ namespace Presentation.Forms
             // 
             this.LbNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LbNombre.AutoSize = true;
-            this.LbNombre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbNombre.ForeColor = System.Drawing.Color.Black;
             this.LbNombre.Location = new System.Drawing.Point(23, 236);
             this.LbNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LbNombre.Name = "LbNombre";
-            this.LbNombre.Size = new System.Drawing.Size(67, 19);
+            this.LbNombre.Size = new System.Drawing.Size(64, 16);
             this.LbNombre.TabIndex = 116;
             this.LbNombre.Text = "Nombres";
             // 
@@ -208,12 +262,12 @@ namespace Presentation.Forms
             // 
             this.LbConfirmarContra.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LbConfirmarContra.AutoSize = true;
-            this.LbConfirmarContra.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbConfirmarContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbConfirmarContra.ForeColor = System.Drawing.Color.Black;
-            this.LbConfirmarContra.Location = new System.Drawing.Point(253, 386);
+            this.LbConfirmarContra.Location = new System.Drawing.Point(265, 355);
             this.LbConfirmarContra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LbConfirmarContra.Name = "LbConfirmarContra";
-            this.LbConfirmarContra.Size = new System.Drawing.Size(150, 19);
+            this.LbConfirmarContra.Size = new System.Drawing.Size(137, 16);
             this.LbConfirmarContra.TabIndex = 115;
             this.LbConfirmarContra.Text = "Confirmar Contraseña";
             // 
@@ -221,12 +275,12 @@ namespace Presentation.Forms
             // 
             this.LbContra.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LbContra.AutoSize = true;
-            this.LbContra.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbContra.ForeColor = System.Drawing.Color.Black;
-            this.LbContra.Location = new System.Drawing.Point(320, 351);
+            this.LbContra.Location = new System.Drawing.Point(325, 318);
             this.LbContra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LbContra.Name = "LbContra";
-            this.LbContra.Size = new System.Drawing.Size(83, 19);
+            this.LbContra.Size = new System.Drawing.Size(77, 16);
             this.LbContra.TabIndex = 114;
             this.LbContra.Text = "Contraseña";
             // 
@@ -234,12 +288,12 @@ namespace Presentation.Forms
             // 
             this.lbUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbUsuario.AutoSize = true;
-            this.lbUsuario.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsuario.ForeColor = System.Drawing.Color.Black;
-            this.lbUsuario.Location = new System.Drawing.Point(23, 351);
+            this.lbUsuario.Location = new System.Drawing.Point(23, 318);
             this.lbUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(59, 19);
+            this.lbUsuario.Size = new System.Drawing.Size(55, 16);
             this.lbUsuario.TabIndex = 113;
             this.lbUsuario.Text = "Usuario";
             // 
@@ -293,7 +347,7 @@ namespace Presentation.Forms
             this.TxtConfirmarContra.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtConfirmarContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtConfirmarContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtConfirmarContra.Location = new System.Drawing.Point(406, 385);
+            this.TxtConfirmarContra.Location = new System.Drawing.Point(406, 352);
             this.TxtConfirmarContra.Margin = new System.Windows.Forms.Padding(2);
             this.TxtConfirmarContra.Name = "TxtConfirmarContra";
             this.TxtConfirmarContra.Size = new System.Drawing.Size(156, 19);
@@ -304,7 +358,7 @@ namespace Presentation.Forms
             this.TxtContraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtContraseña.Location = new System.Drawing.Point(406, 348);
+            this.TxtContraseña.Location = new System.Drawing.Point(406, 315);
             this.TxtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.TxtContraseña.Name = "TxtContraseña";
             this.TxtContraseña.Size = new System.Drawing.Size(157, 19);
@@ -317,7 +371,7 @@ namespace Presentation.Forms
             this.TxtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUsuario.Location = new System.Drawing.Point(94, 348);
+            this.TxtUsuario.Location = new System.Drawing.Point(94, 315);
             this.TxtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(153, 19);
@@ -327,7 +381,7 @@ namespace Presentation.Forms
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(94, 368);
+            this.pictureBox3.Location = new System.Drawing.Point(94, 335);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(165, 10);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -350,7 +404,7 @@ namespace Presentation.Forms
             // 
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(404, 407);
+            this.pictureBox7.Location = new System.Drawing.Point(404, 374);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(160, 10);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -414,6 +468,7 @@ namespace Presentation.Forms
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -431,6 +486,8 @@ namespace Presentation.Forms
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label LbImagen;
         private System.Windows.Forms.Label LbCorreo;
         private System.Windows.Forms.Label Lbcelular;
         private System.Windows.Forms.Label LbApellido;
@@ -450,6 +507,8 @@ namespace Presentation.Forms
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Button button2;

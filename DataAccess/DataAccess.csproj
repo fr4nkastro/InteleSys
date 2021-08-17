@@ -160,6 +160,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Repositories\RepositorioDTOAverias.cs" />
+    <Compile Include="Repositories\RepositorioObservaciones.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\RepositoryArticuloInventario.cs" />
     <Compile Include="Repositories\RepositoryArticulos.cs" />

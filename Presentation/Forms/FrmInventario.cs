@@ -279,6 +279,7 @@ namespace Presentation.Forms
             objArticuloInventario.inventario_id = validateInventario();
 
             modelArticuloInventario.Add(objArticuloInventario);
+            panelCrud.Visible = false;
         }
 
         private void buttonAñadir_Click(object sender, EventArgs e)
@@ -300,8 +301,6 @@ namespace Presentation.Forms
                     MessageBox.Show("Editado Exitosamente");
                 }
             }
-
-            panelCrud.Visible = false;
             bindingSource1.DataSource = modelInventarioGeneral.GetAll();
             
         }
@@ -327,7 +326,7 @@ namespace Presentation.Forms
             objPieza.modelo_id= modelInventarioGeneral.modeloMaquinas[comboBoxModeloMaquina.SelectedIndex - 1].id;
 
             modelPiezas.Edit(objPieza);
-
+            panelCrud.Visible = false;
 
         }
 

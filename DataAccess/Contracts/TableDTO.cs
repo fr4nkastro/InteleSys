@@ -31,7 +31,7 @@ namespace DataAccess.Contracts
 
     public class MantenimientoMaquinas
     {
-        //public decimal id { get; set; }
+        public decimal id { get; set; }
         public string serialNO { get; set; }
     }
 
@@ -39,6 +39,7 @@ namespace DataAccess.Contracts
     {
         public decimal id { get; set; }
         public string nombre { get; set; }
+        public string Solucion { get; set; }
 
     }
 

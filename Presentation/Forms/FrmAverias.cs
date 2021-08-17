@@ -55,7 +55,7 @@ namespace Presentation.Forms
             //List<AVERIAS> tableAverias = modeloAverias.GetAll();
             AVERIAS objAverias = new AVERIAS();
             //decimal newId = tableAverias[tableAverias.Count - 1].id + 1;
-            MessageBox.Show(IDEditar.ToString());
+            //MessageBox.Show(IDEditar.ToString());
             objAverias.id = IDEditar;
             objAverias.descripcion = TxtDescripcionAverias.Text;
             objAverias.solucion = TxtSolucion.Text;
@@ -89,13 +89,44 @@ namespace Presentation.Forms
         {
             if (Estado == "ADDED")
             {
-                Agregar();
+                if (TxtDescripcionAverias.TextLength>0)
+                {
+                    if (TxtSolucion.TextLength>0)
+                    { 
+                        Agregar();
+                        limpiar();
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("Requerimos Una Solucion");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Requerimos Una Descripcion");
+                }
             }
             else if (Estado == "EDITED")
             {
-                Editar();
+                if (TxtDescripcionAverias.TextLength > 0)
+                {
+                    if (TxtSolucion.TextLength > 0)
+                    {
+                       Editar();
+                        limpiar();
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("Requerimos Una Solucion");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Requerimos Una Descripcion");
+                }
             }
-            limpiar();
             ListAverias();
         }
 

@@ -49,6 +49,23 @@ namespace Presentation.Forms
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.PanelADD = new System.Windows.Forms.Panel();
+            this.TxtMaquinaID = new System.Windows.Forms.TextBox();
+            this.LbMaquinaID = new System.Windows.Forms.Label();
+            this.TxtDescripcionAddObs = new System.Windows.Forms.RichTextBox();
+            this.lbDescripcion = new System.Windows.Forms.Label();
+            this.BtnADDObs = new System.Windows.Forms.Button();
+            this.PanelADDActividades = new System.Windows.Forms.Panel();
+            this.TxtDescripcionAct = new System.Windows.Forms.RichTextBox();
+            this.DatePickerFechaFinalActividades = new System.Windows.Forms.DateTimePicker();
+            this.LblDescripcionActividades = new System.Windows.Forms.Label();
+            this.LblFechaFinal = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.TxtIDActividad = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -58,6 +75,8 @@ namespace Presentation.Forms
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.PanelADD.SuspendLayout();
+            this.PanelADDActividades.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -111,7 +130,7 @@ namespace Presentation.Forms
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel1.Location = new System.Drawing.Point(3, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(994, 2);
+            this.panel1.Size = new System.Drawing.Size(1009, 2);
             this.panel1.TabIndex = 135;
             // 
             // panel2
@@ -120,7 +139,7 @@ namespace Presentation.Forms
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel2.Location = new System.Drawing.Point(3, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(991, 2);
+            this.panel2.Size = new System.Drawing.Size(1006, 2);
             this.panel2.TabIndex = 136;
             // 
             // panel3
@@ -129,7 +148,7 @@ namespace Presentation.Forms
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel3.Location = new System.Drawing.Point(3, 31);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(991, 2);
+            this.panel3.Size = new System.Drawing.Size(1006, 2);
             this.panel3.TabIndex = 137;
             // 
             // panel4
@@ -138,7 +157,7 @@ namespace Presentation.Forms
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Location = new System.Drawing.Point(0, 28);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(991, 2);
+            this.panel4.Size = new System.Drawing.Size(1006, 2);
             this.panel4.TabIndex = 138;
             // 
             // dataGridView1
@@ -152,33 +171,35 @@ namespace Presentation.Forms
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(992, 134);
+            this.dataGridView1.Size = new System.Drawing.Size(1007, 134);
             this.dataGridView1.TabIndex = 139;
             // 
             // dataGridView2
             // 
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 45);
+            this.dataGridView2.Location = new System.Drawing.Point(6, 42);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(985, 160);
+            this.dataGridView2.Size = new System.Drawing.Size(1012, 160);
             this.dataGridView2.TabIndex = 140;
             // 
             // dataGridView3
             // 
             this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(15, 37);
+            this.dataGridView3.Location = new System.Drawing.Point(18, 43);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(985, 161);
+            this.dataGridView3.Size = new System.Drawing.Size(1000, 161);
             this.dataGridView3.TabIndex = 141;
             // 
             // dataGridViewMaquina
@@ -192,9 +213,9 @@ namespace Presentation.Forms
             this.dataGridViewMaquina.Name = "dataGridViewMaquina";
             this.dataGridViewMaquina.RowHeadersWidth = 51;
             this.dataGridViewMaquina.RowTemplate.Height = 24;
-            this.dataGridViewMaquina.Size = new System.Drawing.Size(189, 615);
+            this.dataGridViewMaquina.Size = new System.Drawing.Size(189, 632);
             this.dataGridViewMaquina.TabIndex = 142;
-            
+            this.dataGridViewMaquina.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMaquina_CellClick);
             // 
             // comboBox1
             // 
@@ -231,7 +252,7 @@ namespace Presentation.Forms
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 663);
+            this.panel6.Size = new System.Drawing.Size(200, 680);
             this.panel6.TabIndex = 146;
             // 
             // panel7
@@ -242,7 +263,7 @@ namespace Presentation.Forms
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(200, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1012, 73);
+            this.panel7.Size = new System.Drawing.Size(1027, 73);
             this.panel7.TabIndex = 147;
             // 
             // panel8
@@ -253,18 +274,19 @@ namespace Presentation.Forms
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(200, 73);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1012, 175);
+            this.panel8.Size = new System.Drawing.Size(1027, 175);
             this.panel8.TabIndex = 148;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.dataGridView2);
+            this.panel9.Controls.Add(this.PanelADD);
             this.panel9.Controls.Add(this.label3);
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(200, 248);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1012, 211);
+            this.panel9.Size = new System.Drawing.Size(1027, 211);
             this.panel9.TabIndex = 149;
             // 
             // panel10
@@ -272,18 +294,179 @@ namespace Presentation.Forms
             this.panel10.Controls.Add(this.label4);
             this.panel10.Controls.Add(this.panel4);
             this.panel10.Controls.Add(this.dataGridView3);
+            this.panel10.Controls.Add(this.PanelADDActividades);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(200, 459);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1012, 213);
+            this.panel10.Size = new System.Drawing.Size(1027, 213);
             this.panel10.TabIndex = 141;
+            // 
+            // PanelADD
+            // 
+            this.PanelADD.Controls.Add(this.button3);
+            this.PanelADD.Controls.Add(this.label7);
+            this.PanelADD.Controls.Add(this.BtnADDObs);
+            this.PanelADD.Controls.Add(this.lbDescripcion);
+            this.PanelADD.Controls.Add(this.TxtDescripcionAddObs);
+            this.PanelADD.Controls.Add(this.LbMaquinaID);
+            this.PanelADD.Controls.Add(this.TxtMaquinaID);
+            this.PanelADD.Location = new System.Drawing.Point(5, 38);
+            this.PanelADD.Name = "PanelADD";
+            this.PanelADD.Size = new System.Drawing.Size(1000, 171);
+            this.PanelADD.TabIndex = 138;
+            // 
+            // TxtMaquinaID
+            // 
+            this.TxtMaquinaID.Location = new System.Drawing.Point(40, 72);
+            this.TxtMaquinaID.Name = "TxtMaquinaID";
+            this.TxtMaquinaID.Size = new System.Drawing.Size(176, 22);
+            this.TxtMaquinaID.TabIndex = 0;
+            // 
+            // LbMaquinaID
+            // 
+            this.LbMaquinaID.AutoSize = true;
+            this.LbMaquinaID.Location = new System.Drawing.Point(37, 39);
+            this.LbMaquinaID.Name = "LbMaquinaID";
+            this.LbMaquinaID.Size = new System.Drawing.Size(75, 17);
+            this.LbMaquinaID.TabIndex = 1;
+            this.LbMaquinaID.Text = "MaquinaID";
+            // 
+            // TxtDescripcionAddObs
+            // 
+            this.TxtDescripcionAddObs.Location = new System.Drawing.Point(260, 62);
+            this.TxtDescripcionAddObs.Name = "TxtDescripcionAddObs";
+            this.TxtDescripcionAddObs.Size = new System.Drawing.Size(272, 96);
+            this.TxtDescripcionAddObs.TabIndex = 2;
+            this.TxtDescripcionAddObs.Text = "";
+            // 
+            // lbDescripcion
+            // 
+            this.lbDescripcion.AutoSize = true;
+            this.lbDescripcion.Location = new System.Drawing.Point(257, 39);
+            this.lbDescripcion.Name = "lbDescripcion";
+            this.lbDescripcion.Size = new System.Drawing.Size(82, 17);
+            this.lbDescripcion.TabIndex = 3;
+            this.lbDescripcion.Text = "Descripcion";
+            // 
+            // BtnADDObs
+            // 
+            this.BtnADDObs.Location = new System.Drawing.Point(585, 69);
+            this.BtnADDObs.Name = "BtnADDObs";
+            this.BtnADDObs.Size = new System.Drawing.Size(115, 51);
+            this.BtnADDObs.TabIndex = 4;
+            this.BtnADDObs.Text = "Salvar";
+            this.BtnADDObs.UseVisualStyleBackColor = true;
+            this.BtnADDObs.Click += new System.EventHandler(this.BtnADDObs_Click);
+            // 
+            // PanelADDActividades
+            // 
+            this.PanelADDActividades.Controls.Add(this.button2);
+            this.PanelADDActividades.Controls.Add(this.label6);
+            this.PanelADDActividades.Controls.Add(this.TxtIDActividad);
+            this.PanelADDActividades.Controls.Add(this.button1);
+            this.PanelADDActividades.Controls.Add(this.LblFechaFinal);
+            this.PanelADDActividades.Controls.Add(this.LblDescripcionActividades);
+            this.PanelADDActividades.Controls.Add(this.DatePickerFechaFinalActividades);
+            this.PanelADDActividades.Controls.Add(this.TxtDescripcionAct);
+            this.PanelADDActividades.Location = new System.Drawing.Point(18, 57);
+            this.PanelADDActividades.Name = "PanelADDActividades";
+            this.PanelADDActividades.Size = new System.Drawing.Size(988, 138);
+            this.PanelADDActividades.TabIndex = 142;
+            // 
+            // TxtDescripcionAct
+            // 
+            this.TxtDescripcionAct.Location = new System.Drawing.Point(220, 42);
+            this.TxtDescripcionAct.Name = "TxtDescripcionAct";
+            this.TxtDescripcionAct.Size = new System.Drawing.Size(254, 63);
+            this.TxtDescripcionAct.TabIndex = 1;
+            this.TxtDescripcionAct.Text = "";
+            // 
+            // DatePickerFechaFinalActividades
+            // 
+            this.DatePickerFechaFinalActividades.Location = new System.Drawing.Point(502, 55);
+            this.DatePickerFechaFinalActividades.Name = "DatePickerFechaFinalActividades";
+            this.DatePickerFechaFinalActividades.Size = new System.Drawing.Size(272, 22);
+            this.DatePickerFechaFinalActividades.TabIndex = 2;
+            // 
+            // LblDescripcionActividades
+            // 
+            this.LblDescripcionActividades.AutoSize = true;
+            this.LblDescripcionActividades.Location = new System.Drawing.Point(223, 23);
+            this.LblDescripcionActividades.Name = "LblDescripcionActividades";
+            this.LblDescripcionActividades.Size = new System.Drawing.Size(82, 17);
+            this.LblDescripcionActividades.TabIndex = 4;
+            this.LblDescripcionActividades.Text = "Descripcion";
+            // 
+            // LblFechaFinal
+            // 
+            this.LblFechaFinal.AutoSize = true;
+            this.LblFechaFinal.Location = new System.Drawing.Point(499, 23);
+            this.LblFechaFinal.Name = "LblFechaFinal";
+            this.LblFechaFinal.Size = new System.Drawing.Size(77, 17);
+            this.LblFechaFinal.TabIndex = 5;
+            this.LblFechaFinal.Text = "FechaFinal";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(806, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 54);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "SalvarActividad";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // TxtIDActividad
+            // 
+            this.TxtIDActividad.Location = new System.Drawing.Point(48, 57);
+            this.TxtIDActividad.Name = "TxtIDActividad";
+            this.TxtIDActividad.Size = new System.Drawing.Size(160, 22);
+            this.TxtIDActividad.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(45, 23);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 17);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Id Actividad";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(806, 81);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(133, 54);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "DescartarActividad";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(37, 4);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(458, 17);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "El ID de maquina se llena selecionando una maquina del menu izquierd";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(736, 69);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(115, 51);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Cancelar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FrmMantenimientoDetallado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1212, 663);
+            this.ClientSize = new System.Drawing.Size(1227, 680);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
@@ -307,6 +490,10 @@ namespace Presentation.Forms
             this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.PanelADD.ResumeLayout(false);
+            this.PanelADD.PerformLayout();
+            this.PanelADDActividades.ResumeLayout(false);
+            this.PanelADDActividades.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -332,5 +519,22 @@ namespace Presentation.Forms
         public System.Windows.Forms.DataGridView dataGridView2;
         public System.Windows.Forms.DataGridView dataGridView3;
         public System.Windows.Forms.DataGridView dataGridViewMaquina;
+        private System.Windows.Forms.Button BtnADDObs;
+        private System.Windows.Forms.Label lbDescripcion;
+        private System.Windows.Forms.RichTextBox TxtDescripcionAddObs;
+        private System.Windows.Forms.Label LbMaquinaID;
+        private System.Windows.Forms.TextBox TxtMaquinaID;
+        public System.Windows.Forms.Panel PanelADD;
+        public System.Windows.Forms.Panel PanelADDActividades;
+        private System.Windows.Forms.Label LblDescripcionActividades;
+        private System.Windows.Forms.DateTimePicker DatePickerFechaFinalActividades;
+        private System.Windows.Forms.RichTextBox TxtDescripcionAct;
+        private System.Windows.Forms.Label LblFechaFinal;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox TxtIDActividad;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label7;
     }
 }

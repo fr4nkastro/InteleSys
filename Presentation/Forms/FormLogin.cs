@@ -50,7 +50,8 @@ namespace Presentation.Forms
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-            
+            textBoxUser.Text = "JosueReyes";
+            textBoxPassword.Text = "josuereyes";
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)

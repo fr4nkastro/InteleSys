@@ -36,12 +36,12 @@ namespace DataAccess.Repositories
             }
         }
 
-        public void Remove(int id)
+        public void Remove(decimal id)
         {
             using (var context = new InteleSysEntities())
             {
-                MAQUINA objMaquina = context.MAQUINA.Find(id);
-                context.MAQUINA.Remove(objMaquina);
+                OBSERVACIONES obj = context.OBSERVACIONES.Find(id);
+                context.OBSERVACIONES.Remove(obj);
                 context.SaveChanges();
 
             }

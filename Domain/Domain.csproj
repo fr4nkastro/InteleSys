@@ -48,15 +48,14 @@
     <Compile Include="Models\ModelArticulos.cs" />
     <Compile Include="Models\ModelMantenimiento.cs" />
     <Compile Include="Models\ModeloAverias.cs" />
+    <Compile Include="Models\ModelObservaciones.cs" />
     <Compile Include="Models\ModelPiezas.cs" />
     <Compile Include="Models\ModelRegMantenimientoMqns.cs" />
     <Compile Include="Models\ModelTableInventarioGeneral.cs" />
     <Compile Include="Models\ModelTableInventarioPiezas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ValueObjects\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{f563fd32-e31b-4afd-a893-2fcf1cf318c9}</Project>

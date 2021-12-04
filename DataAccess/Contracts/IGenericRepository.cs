@@ -10,7 +10,7 @@ namespace DataAccess.Contracts
     {
         void Add(Entity entity);
         void Edit(Entity entity);
-        void Remove(int id);
+        void Remove(decimal id);
         IEnumerable<Entity> GetAll();
     }
 }

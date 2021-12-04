@@ -12,12 +12,13 @@ namespace Presentation.Forms
 {
     public partial class FrmMenuMantenimiento : Form
     {
-
+        
         public FrmMantenimientoDetallado frmParent;
         public ModelMantenimiento objModelMantenimiento;
         public ModelRegMantenimientoMqns objModelRegMantenimientoMqns;
         DateTime startDate;
         DateTime endDate;
+        int Validacion;
         //private ModelDTOMantenimiento objDTOMantenimiento;
         public FrmMenuMantenimiento()
         {
@@ -33,23 +34,23 @@ namespace Presentation.Forms
 
         private void FrmMenuMantenimiento_Load(object sender, EventArgs e)
         {
-
-
-
-
-
+            
+            
+           
+            
+            
         }
 
         private void panel1_Enter(object sender, EventArgs e)
         {
-
+            
         }
 
         private void comboBoxFilters_Enter(object sender, EventArgs e)
         {
-            if (comboBoxFechas.Text == "Seleccione un filtro...")
+           if(comboBoxFechas.Text=="Seleccione un filtro...")
             {
-                comboBoxFechas.Text = "";
+                comboBoxFechas.Text= "";
             }
         }
 
@@ -68,13 +69,38 @@ namespace Presentation.Forms
             startDate = dateTimePickerStart.Value;
             endDate = dateTimePickerEnd.Value;
             comboBoxFechas.DataSource = objModelMantenimiento.listFechasMantenimiento(startDate, endDate);
+            Validacion = 1;
 
         }
 
         private void comboBoxFechas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            decimal mantenimientoId = objModelMantenimiento.lstMantenimiento[comboBoxFechas.SelectedIndex].id;
-            frmParent.dataGridViewMaquina.DataSource = objModelRegMantenimientoMqns.GetMaquinaByMantenimiento(mantenimientoId);
+            
+            decimal mantenimientoId= objModelMantenimiento.lstMantenimiento[comboBoxFechas.SelectedIndex].id;
+            frmParent.ID = mantenimientoId;
+            frmParent.dataGridViewMaquina.DataSource= objModelRegMantenimientoMqns.GetMaquinaByMantenimiento(mantenimientoId);
+           frmParent.dataGridViewMaquina.Columns[0].Visible = false;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Validacion == 1)
+            {
+                frmParent.dataGridView2.Visible = false;
+                frmParent.PanelADD.Visible = true;
+                frmParent.dataGridView3.Visible = false;
+                frmParent.PanelADDActividades.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Debe Buscar un rango de fechas(Usando El boton de la Lupa)");    
+            }
+
         }
     }
 }

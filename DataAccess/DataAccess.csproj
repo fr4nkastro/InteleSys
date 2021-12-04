@@ -160,6 +160,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Repositories\RepositorioDTOAverias.cs" />
+    <Compile Include="Repositories\RepositorioObservaciones.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\RepositoryArticuloInventario.cs" />
     <Compile Include="Repositories\RepositoryArticulos.cs" />
@@ -167,7 +168,6 @@
     <Compile Include="Repositories\RepositoryDTOInventarioGeneral.cs" />
     <Compile Include="Repositories\RepositoryDTOInventarioPiezas.cs" />
     <Compile Include="Repositories\RepositoryCustomTable.cs" />
-    <Compile Include="Repositories\RepositoryDTOMantenimientoFecha.cs" />
     <Compile Include="Repositories\RepositoryMantenimiento.cs" />
     <Compile Include="Repositories\RepositoryMantenimientoFecha.cs" />
     <Compile Include="Repositories\RepositoryMaquinas.cs" />

@@ -48,7 +48,6 @@
     <Compile Include="Models\ModelArticulos.cs" />
     <Compile Include="Models\ModelMantenimiento.cs" />
     <Compile Include="Models\ModeloAverias.cs" />
-    <Compile Include="Models\ModeloMantenimientoFecha.cs" />
     <Compile Include="Models\ModelPiezas.cs" />
     <Compile Include="Models\ModelRegMantenimientoMqns.cs" />
     <Compile Include="Models\ModelTableInventarioGeneral.cs" />
@@ -56,13 +55,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ValueObjects\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
       <Project>{f563fd32-e31b-4afd-a893-2fcf1cf318c9}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ValueObjects\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

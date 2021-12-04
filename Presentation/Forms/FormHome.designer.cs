@@ -404,10 +404,12 @@ namespace Presentation.Forms
             this.Controls.Add(this.panelMainFrm);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelHeader);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1340, 835);
             this.Name = "FormHome";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormHome_FormClosing);
             this.Load += new System.EventHandler(this.FormHome_Load);

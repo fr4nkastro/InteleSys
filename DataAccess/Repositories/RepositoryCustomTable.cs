@@ -33,7 +33,7 @@ namespace DataAccess.Repositories
         }
         public IEnumerable<CustomTable> GetAll()
         {
-            return repository.ExecuteQuery(query2);
+            return repository.ExecuteQuery(query+" UNION "+query2);
 
 
         }

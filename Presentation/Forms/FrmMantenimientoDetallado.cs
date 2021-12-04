@@ -27,6 +27,14 @@ namespace Presentation.Forms
             Averias = new ModeloAverias();
         }
 
+        public string textLengthValidation(RichTextBox textBox)
+        {
+            string result;
+            if (textBox.TextLength <= 100)
+                result= TxtDescripcionAct.Text;
+            else result= null;
+            return  result;
+        }
         private void FrmMantenimientoDetallado_Load(object sender, EventArgs e)
         {
             //dataGridViewAverias.DataSource = objDTOMantenimiento.GetAverias(frmMenu.startDate.ToShortDateString(), frmMenu.endDate.ToShortDateString());

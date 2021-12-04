@@ -22,7 +22,6 @@ namespace Presentation
         List<ARTICULO> tableArticulos;
         
 
-        decimal modeloID;
         
         public Form1()
         {
@@ -72,7 +71,7 @@ namespace Presentation
             //comboBox1.SelectedIndex.
             string modeloIdSelected = comboBox1.GetItemText(comboBox1.SelectedItem);
             
-            Console.WriteLine(modeloID);
+            //Console.WriteLine(modeloID);
             PIEZAS objPieza = new PIEZAS();
             updateData();
             ARTICULO lastArticulo = tableArticulos[tableArticulos.Count -1];

@@ -29,7 +29,7 @@ namespace Presentation.Forms
         ModelArticuloInventario modelArticuloInventario;
         public FrmMenuInventario frmMenu { get; set; }
         ArrayList models;
-        decimal modeloID;
+        //decimal modeloID;
         public FrmInventario(FormHome frmHome)
         {
             InitializeComponent();

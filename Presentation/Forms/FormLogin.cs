@@ -13,24 +13,23 @@ namespace Presentation.Forms
 {
     public partial class FormLogin : Form
     {
-        internal object panel3;
-        string LoginName;
+        //string LoginName;
         string Nombre;
-        string Apellido;
-        public static SqlConnection Conectar()
-        {
-            SqlConnection cn = new SqlConnection("Data Source=LAPTOP-MTHU4RQT;Initial Catalog=InteleSys;User ID=JosueReyes;Password=Caracoles1412");
+        //string Apellido;
+        //public static SqlConnection Conectar()
+        //{
+        //    //SqlConnection cn = new SqlConnection("Server= localhost; Database= employeedetails; Integrated Security=True;");
 
-            cn.Open();
-            return cn;
+        //    //cn.Open();
+        //    return 0;
 
-        }
-        public static SqlConnection Cerrrar()
-        {
-            SqlConnection cn = new SqlConnection("Data Source=LAPTOP-MTHU4RQT;Initial Catalog=InteleSys;User ID=JosueReyes;Password=Caracoles1412");
-            cn.Close();
-            return cn;
-        }
+        //}
+        //public static SqlConnection Cerrrar()
+        //{
+        //    //    SqlConnection cn = new SqlConnection("Server= localhost; Database= employeedetails; Integrated Security=True;");
+        //    //    cn.Close();
+        //    //    return cn;
+        //}
 
 
         public FormLogin()
@@ -75,33 +74,30 @@ namespace Presentation.Forms
             }
             else
             {
-                Conectar();
+                //    Conectar();
 
-                SqlDataAdapter da = new SqlDataAdapter("select count(*) from USUARIO WHERE nombre='" + textBoxUser.Text + "'AND PWDCOMPARE('" + textBoxPassword.Text + "',password)=1", Conectar());
-                DataTable dt = new DataTable();
-                da.Fill(dt);
+                //    SqlDataAdapter da = new SqlDataAdapter("select count(*) from USUARIO WHERE nombre='" + textBoxUser.Text + "'AND PWDCOMPARE('" + textBoxPassword.Text + "',password)=1", Conectar());
+                //    DataTable dt = new DataTable();
+                //    da.Fill(dt);
 
-                if (dt.Rows[0][0].ToString() == "1")
-                {
-                    SqlCommand Comando = new SqlCommand("SELECT * FROM Usuario where nombre=@LoginName", Conectar());
-                    Comando.Parameters.AddWithValue("@LoginName", textBoxUser.Text);
-                    SqlDataReader registro = Comando.ExecuteReader();
+                //    if (dt.Rows[0][0].ToString() == "1")
+                //    {
+                //        SqlCommand Comando = new SqlCommand("SELECT * FROM Usuario where nombre=@LoginName", Conectar());
+                //        Comando.Parameters.AddWithValue("@LoginName", textBoxUser.Text);
+                //        SqlDataReader registro = Comando.ExecuteReader();
 
-                    if (registro.Read())
-                    {
-                        LoginName = registro["nombre"].ToString();
-                        Nombre = registro["Nombre"].ToString();
-                    }
-                    MessageBox.Show("Bienvenid@ " + Nombre);
+                //        if (registro.Read())
+                //        {
+                //            LoginName = registro["nombre"].ToString();
+                //            Nombre = registro["Nombre"].ToString();
+                //        }
+                MessageBox.Show("Bienvenid@ " + Nombre);
 
                     FormHome v1 = new FormHome();
                     v1.Show();
                     this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Usuario o Contraseña Incorrecto");
-                }
+                
+                
 
             }
         }

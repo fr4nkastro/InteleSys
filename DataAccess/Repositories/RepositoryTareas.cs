@@ -5,22 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using DataAccess.Contracts;
 using DataAccess.Entities;
-using DataAccess.DTO;
+
 
 namespace DataAccess.Repositories
 {
-    public class RepositoryAverias : IGenericRepository<AVERIAS>
+    public class RepositoryTareas : IGenericRepository<TAREAS>
+
     {
-        public void Add(AVERIAS entity)
+        public void Add(TAREAS entity)
         {
             using (var context = new InteleSysEntities())
             {
-                context.AVERIAS.Add(entity);
+                context.TAREAS.Add(entity);
                 context.SaveChanges();
             }
         }
 
-        public void Edit(AVERIAS entity)
+        public void Edit(TAREAS entity)
         {
             using (var context = new InteleSysEntities())
             {
@@ -29,11 +30,11 @@ namespace DataAccess.Repositories
             }
         }
 
-        public IEnumerable<AVERIAS> GetAll()
+        public IEnumerable<TAREAS> GetAll()
         {
             using (var context = new InteleSysEntities())
             {
-                return context.AVERIAS.AsNoTracking().ToList<AVERIAS>();
+                return context.TAREAS.AsNoTracking().ToList<TAREAS>();
             }
         }
 
@@ -41,11 +42,12 @@ namespace DataAccess.Repositories
         {
             using (var context = new InteleSysEntities())
             {
-                AVERIAS objAverias = context.AVERIAS.Find(id);
-                context.AVERIAS.Remove(objAverias);
+                TAREAS objRegMantenimientoMqns = context.TAREAS.Find(id);
+                context.TAREAS.Remove(objRegMantenimientoMqns);
                 context.SaveChanges();
 
             }
         }
+
     }
 }

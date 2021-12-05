@@ -8,32 +8,34 @@ using DataAccess.Repositories;
 
 namespace Domain.Models
 {
-    public class ModelArticulos
+    public class ModelObservaciones
     {
-        ARTICULO objArticulo;
-        RepositoryArticulos repository;
+        OBSERVACIONES obj;
+        RepositorioObservaciones repository;
 
-        public ModelArticulos()
+        public ModelObservaciones()
         {
-            objArticulo = new ARTICULO();
-            repository = new RepositoryArticulos();
+            obj = new OBSERVACIONES();
+            repository = new RepositorioObservaciones();
         }
 
-        public List<ARTICULO> GetAll()
+        public List<OBSERVACIONES> GetAll()
         {
             using (var context = new InteleSysEntities())
             {
-                return context.ARTICULO.ToList();
+                return context.OBSERVACIONES.ToList();
 
             }
         }
 
-        public void Add(ARTICULO objArticulo)
+        public void Add(OBSERVACIONES obj)
         {
-            repository.Add(objArticulo);
+            repository.Add(obj);
+
+           
         }
 
-        public void Edit(ARTICULO objPieza)
+        public void Edit(OBSERVACIONES objPieza)
         {
             repository.Add(objPieza);
         }

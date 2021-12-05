@@ -27,13 +27,13 @@ namespace Domain.Models
         public ModelTableInventarioGeneral()
         {
             repository = new RepositoryDTOInventarioGeneral();
-            modeloMaquinas = repository.GetModeloMaquina();
-            tipoArticulos = repository.GetTipoArtilculo();
+            modeloMaquinas = repository.GetModeloMaquina().ToList();
+            tipoArticulos = repository.GetTipoArtilculo().ToList();
         }
         public List<TableInventarioGeneral> GetAll()
         {
 
-            return repository.GetAll();
+            return repository.GetAll().ToList();
         }
 
         public List<TableInventarioGeneral> Search(string filter)

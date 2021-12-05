@@ -64,7 +64,15 @@ namespace Presentation.Forms
             }
 
         }
+        public int textBoxTypeValidation(TextBox textBox)
+        {
+            int result;
+            if (!int.TryParse(textBox.Text, out result))
+                result = -1;
+                
 
+            return result;
+        }
         private void BtnADDObs_Click(object sender, EventArgs e)
         {
             OBSERVACIONES obs = new OBSERVACIONES();

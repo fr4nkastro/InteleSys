@@ -8,32 +8,34 @@ using DataAccess.Repositories;
 
 namespace Domain.Models
 {
-    public class ModelArticulos
+    public class ModelMaquina
     {
-        ARTICULO objArticulo;
-        RepositoryArticulos repository;
+        MAQUINA obj;
+        RepositoryMaquinas repository;
 
-        public ModelArticulos()
+        public ModelMaquina()
         {
-            objArticulo = new ARTICULO();
-            repository = new RepositoryArticulos();
+            obj = new MAQUINA();
+            repository = new RepositoryMaquinas();
         }
 
-        public List<ARTICULO> GetAll()
+        public List<MAQUINA> GetAll()
         {
             using (var context = new InteleSysEntities())
             {
-                return context.ARTICULO.ToList();
+                return context.MAQUINA.ToList();
 
             }
         }
 
-        public void Add(ARTICULO objArticulo)
+        public void Add(MAQUINA obj)
         {
-            repository.Add(objArticulo);
+            repository.Add(obj);
+            
+
         }
 
-        public void Edit(ARTICULO objPieza)
+        public void Edit(MAQUINA objPieza)
         {
             repository.Add(objPieza);
         }

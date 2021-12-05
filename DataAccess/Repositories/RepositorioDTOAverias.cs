@@ -11,7 +11,7 @@ namespace DataAccess.Repositories
 {
     public class RepositorioDTOAverias: TableDTO
     {
-        public List<TablaAveriasModelo> GetAll()
+        public IEnumerable<TablaAveriasModelo> GetAll()
         {
             using (var context = new InteleSysEntities())
             {
@@ -24,7 +24,7 @@ namespace DataAccess.Repositories
 
         }
 
-        public List<Modelo> GetModelo()
+        public IEnumerable<Modelo> GetModelo()
         {
             using (var context = new InteleSysEntities())
             {
@@ -42,11 +42,11 @@ namespace DataAccess.Repositories
             }
         }
 
-        public List<TablaAveriasModelo> Search(string filter)
+        public IEnumerable<TablaAveriasModelo> Search(string filter)
         {
             return GetAll().Where<TablaAveriasModelo>(x => x.Modelo.Contains(filter) || x.DescripcionAveria.Contains(filter)).ToList();
         }
-        public List<TablaAveriasModelo> Search2(string filter)
+        public IEnumerable<TablaAveriasModelo> Search2(string filter)
         {
             return GetAll().Where<TablaAveriasModelo>(x => x.Modelo.Contains(filter)).ToList();
         }

@@ -36,7 +36,7 @@ namespace DataAccess.Repositories
             }
         }
 
-        public void Remove(int id)
+        public void Remove(decimal id)
         {
             using (var context = new InteleSysEntities())
             {

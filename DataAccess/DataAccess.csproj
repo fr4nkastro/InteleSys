@@ -173,6 +173,7 @@
     <Compile Include="Repositories\RepositoryMaquinas.cs" />
     <Compile Include="Repositories\RepositoryPiezas.cs" />
     <Compile Include="Repositories\RepositoryRegMantenimientoMqns.cs" />
+    <Compile Include="Repositories\RepositoryTareas.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Entities\ModelInteleSys.edmx">

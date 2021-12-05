@@ -4,24 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataAccess.Contracts;
-using DataAccess.Repositories;
 using DataAccess.Entities;
 
-namespace DataAccess.Repositories
 
+namespace DataAccess.Repositories
 {
-    public class RepositoryMantenimiento : IGenericRepository<MANTENIMIENTO>
+    public class RepositoryTareas : IGenericRepository<TAREAS>
+
     {
-        public void Add(MANTENIMIENTO entity)
+        public void Add(TAREAS entity)
         {
             using (var context = new InteleSysEntities())
             {
-                context.MANTENIMIENTO.Add(entity);
+                context.TAREAS.Add(entity);
                 context.SaveChanges();
             }
         }
 
-        public void Edit(MANTENIMIENTO entity)
+        public void Edit(TAREAS entity)
         {
             using (var context = new InteleSysEntities())
             {
@@ -30,11 +30,11 @@ namespace DataAccess.Repositories
             }
         }
 
-        public IEnumerable<MANTENIMIENTO> GetAll()
+        public IEnumerable<TAREAS> GetAll()
         {
             using (var context = new InteleSysEntities())
             {
-                return context.MANTENIMIENTO.AsNoTracking().ToList<MANTENIMIENTO>();
+                return context.TAREAS.AsNoTracking().ToList<TAREAS>();
             }
         }
 
@@ -42,13 +42,12 @@ namespace DataAccess.Repositories
         {
             using (var context = new InteleSysEntities())
             {
-                MANTENIMIENTO objMantenimiento = context.MANTENIMIENTO.Find(id);
-                context.MANTENIMIENTO.Remove(objMantenimiento);
+                TAREAS objRegMantenimientoMqns = context.TAREAS.Find(id);
+                context.TAREAS.Remove(objRegMantenimientoMqns);
                 context.SaveChanges();
 
             }
         }
 
- 
     }
 }

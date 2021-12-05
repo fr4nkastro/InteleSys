@@ -23,13 +23,13 @@ namespace Domain.Models
         public ModelTableInventarioPiezas()
         {
             repository = new RepositoryDTOInventarioPiezas();
-            modeloMaquinas = repository.GetModels();
+            modeloMaquinas = repository.GetModels().ToList();
             
         }
         public List<TableInventarioPiezas> GetAll()
         {
             
-            return repository.GetAll();
+            return repository.GetAll().ToList();
         }
 
         public List<TableInventarioPiezas> Search(string filter)

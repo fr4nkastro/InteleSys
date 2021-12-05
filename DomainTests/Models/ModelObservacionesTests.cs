@@ -17,7 +17,7 @@ namespace Domain.Models.Tests
 
 
         [TestMethod()]
-        public void AddTest()
+        public void AddObservacionTest()
         {
             ModelObservaciones model= new ModelObservaciones();
             OBSERVACIONES observacion= new OBSERVACIONES();

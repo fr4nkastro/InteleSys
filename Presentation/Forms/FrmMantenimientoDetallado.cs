@@ -70,6 +70,7 @@ namespace Presentation.Forms
             if (!int.TryParse(textBox.Text, out result))
                 result = -1;
                 
+
             return result;
         }
         private void BtnADDObs_Click(object sender, EventArgs e)

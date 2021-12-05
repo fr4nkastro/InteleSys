@@ -24,7 +24,7 @@ namespace DataAccess.Repositories
         }
 
 
-        public List<TableInventarioPiezas> GetAll()
+        public IEnumerable<TableInventarioPiezas> GetAll()
         {   
             using (var context = new InteleSysEntities())
             {
@@ -37,7 +37,7 @@ namespace DataAccess.Repositories
 
         }
 
-        public List<ModeloMaquinas> GetModels()
+        public IEnumerable<ModeloMaquinas> GetModels()
         {
             using (var context = new InteleSysEntities())
             {

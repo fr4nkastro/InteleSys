@@ -18,6 +18,15 @@ namespace Domain.Models
         {
             repository = new RepositoryMantenimiento();
         }
+        
+        public IEnumerable<MANTENIMIENTO> getAll()
+        {
+           return repository.GetAll();    
+        }
+        public void Add(MANTENIMIENTO mantenimiento)
+        {
+            repository.Add(mantenimiento);
+        }
 
         public List<MANTENIMIENTO> GetByDateRange(DateTime startDate, DateTime endDate)
         {
@@ -37,6 +46,10 @@ namespace Domain.Models
             return arrayList;
         }
 
+        public void Remove(Decimal MantenimientoId)
+        {
+            repository.Remove(MantenimientoId);
+        }
 
     }
 }

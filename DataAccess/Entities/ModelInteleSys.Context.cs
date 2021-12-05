@@ -18,7 +18,6 @@ namespace DataAccess.Entities
         public InteleSysEntities()
             : base("name=InteleSysEntities")
         {
-            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

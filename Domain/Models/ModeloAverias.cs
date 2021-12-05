@@ -23,7 +23,7 @@ namespace Domain.Models
             objAverias = new AVERIAS();
             Repository = new RepositoryAverias();
             repository = new RepositorioDTOAverias();
-            modelo = repository.GetModelo();
+            modelo = repository.GetModelo().ToList();
         }
 
         public List<AVERIAS> GetAll()
@@ -39,7 +39,7 @@ namespace Domain.Models
         public List<TablaAveriasModelo> GetAllAverias()
         {
 
-            return repository.GetAll();
+            return repository.GetAll().ToList();
         }
 
 

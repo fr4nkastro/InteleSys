@@ -13,7 +13,7 @@ namespace DataAccess.Repositories
     public class RepositoryDTOInventarioGeneral : TableDTO
     {
         
-        public List<TableInventarioGeneral> GetAll()
+        public IEnumerable<TableInventarioGeneral> GetAll()
         {
             using (var context = new InteleSysEntities())
             {
@@ -27,7 +27,7 @@ namespace DataAccess.Repositories
         }
 
 
-        public List<ModeloMaquinas> GetModeloMaquina()
+        public IEnumerable<ModeloMaquinas> GetModeloMaquina()
         {
             using (var context = new InteleSysEntities())
             {
@@ -44,7 +44,7 @@ namespace DataAccess.Repositories
             }
         }
 
-        public List<TipoArticulo> GetTipoArtilculo()
+        public IEnumerable<TipoArticulo> GetTipoArtilculo()
         {
             using (var context = new InteleSysEntities())
             {
@@ -61,7 +61,7 @@ namespace DataAccess.Repositories
             }
         }
 
-        public List<TableInventarioGeneral> Search(string filter)
+        public IEnumerable<TableInventarioGeneral> Search(string filter)
         {
             return GetAll().Where<TableInventarioGeneral>(x => x.Descripción.Contains(filter)).ToList();
         }
